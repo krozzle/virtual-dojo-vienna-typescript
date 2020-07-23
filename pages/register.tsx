@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { InputField } from '../components/fields/InputFields';
 import { RegisterComponent } from '../generated/apolloComponents';
+import { useRouter } from 'next/router';
 
 export default () => {
   return (
@@ -20,10 +21,11 @@ export default () => {
                   },
                 });
                 console.log(response);
-                // todo catch is not working
+                const router = useRouter();
+                router.push('/check-email');
               } catch (err) {
-                // to get better error messaging, use Object.keys(err) and go from there
-                console.log('err: ', err.graphQLErrors);
+                // to get better error messaging, use Object.keys(err) and go from there (ie: looking for validationErrors)
+                // console.log('err: ', err.graphQLErrors);
                 const errors: { [key: string]: string } = {};
                 err.graphQLErrors[0].extensions.exception.validationErrors.forEach(
                   (validationErr: any) => {
@@ -34,7 +36,6 @@ export default () => {
                     );
                   },
                 );
-                // console.log(errors);
                 setErrors(errors);
               }
 
