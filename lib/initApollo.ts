@@ -26,6 +26,7 @@ function create(initialState: any, { getToken }: Options) {
     credentials: 'include',
   });
 
+  // put context in header
   const authLink = setContext((_, { headers }) => {
     const token = getToken();
     return {
