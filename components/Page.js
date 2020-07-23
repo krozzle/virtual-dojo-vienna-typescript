@@ -69,7 +69,7 @@ const Page = ({ children }) => (
 
             <NavLink href='/memberships'>Memberships</NavLink>
 
-            <NavLink href='/users/usersPage'>Members</NavLink>
+            <NavLink href='/login/'>Log In</NavLink>
 
             <Contact
             // sx={{
@@ -88,10 +88,10 @@ const Page = ({ children }) => (
     <Box
       sx={{
         width: '100vw',
-        position: 'absolute',
+        position: 'fixed',
         background: 'white',
         color: 'black',
-        opacity: 0.65,
+        opacity: 0.75,
         bottom: '0',
         py: 4,
         px: 3,
@@ -100,7 +100,10 @@ const Page = ({ children }) => (
     >
       <Flex
         sx={{
-          justifyContent: 'space-between',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          alignContent: 'center',
+          // width: '50vw',
         }}
       >
         <Flex
@@ -109,7 +112,7 @@ const Page = ({ children }) => (
             // flexDirection: 'column',
           }}
         >
-          <Text variant='footer'>Follow us</Text>
+          <Text>Follow us</Text>
           <a href='https://www.twitch.tv/virtualdojovienna'>
             <Image variant='socials' src='/twitch.svg' />
           </a>
@@ -126,7 +129,7 @@ const Page = ({ children }) => (
             <Image variant='socials' src='/facebook.svg' />
           </a>
         </Flex>
-        <Text variant='footer' sx={{ justifySelf: 'center' }}>
+        <Text sx={{ justifySelf: 'center' }}>
           © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
         </Text>
         <Flex

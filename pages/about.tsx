@@ -1,16 +1,32 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Link from 'next/link';
+import { Text, Flex } from 'theme-ui';
+import Page from '../components/Page';
 
 const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>About</h1>
-    <p>This is the about page</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
-  </Layout>
-)
+  <Page>
+    <Flex
+      sx={{
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+      }}
+    >
+      <Text>
+        <h1>Who We Be</h1>
+        As the home of Austria's fighting game community, we provide a place to
+        meet and get together with fighting game enthusiasts.
+      </Text>
+      <p>
+        Engage with people that share the same passion casually or participate
+        in our local ranking tournaments.
+      </p>
+      <p>
+        <Link href='/'>
+          <a>See us at home</a>
+        </Link>
+      </p>
+    </Flex>
+  </Page>
+);
 
-export default AboutPage
+export default AboutPage;

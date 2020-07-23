@@ -1,17 +1,20 @@
+import { Text } from 'theme-ui';
 import Page from '../components/Page';
+
+// todo add logo as h1 or something
 
 const Impressum = () => {
   return (
     <Page>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, labore
-      ut! Blanditiis facilis laudantium, necessitatibus eum distinctio ut cum
-      nisi itaque reprehenderit cumque repellat sequi. Aliquam nulla enim
-      aperiam. Soluta, fugit officiis! Aliquid in sequi ab velit itaque deserunt
-      nostrum eius, dolor harum. Laudantium veritatis mollitia repellat
-      accusamus animi eius ut, esse facere tempore rerum, quos similique? Beatae
-      praesentium assumenda modi quae? Explicabo quaerat nobis consequuntur,
-      molestiae ab nulla officia rerum aliquid, quos quam blanditiis animi ex
-      labore fugiat laboriosam.
+      <h3>Address</h3>
+      <p>Praterstrasse 58/1/L1 1020 Vienna</p>
+      <br />
+      <h3>Email</h3> <p>office@virtualdojovienna.com</p>
+      <br />
+      <h3>Phone</h3> <p>+43 1 27 67 824</p>
+      <br />
+      <h3>Bank</h3>
+      <p>IBAN AT94 2011 1842 6118 4800 BIC GIBAATWWXXX</p>
     </Page>
   );
 };

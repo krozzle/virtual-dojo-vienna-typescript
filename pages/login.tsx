@@ -1,13 +1,13 @@
 import { Formik, Field } from 'formik';
 import React from 'react';
-import Layout from '../components/Layout';
 import { InputField } from '../components/fields/InputFields';
 import { LoginComponent } from '../generated/apolloComponents';
-import { useRouter, Router } from 'next/router';
+import { useRouter } from 'next/router';
+import Page from '../components/Page';
 
 export default () => {
   return (
-    <Layout title='Login Page'>
+    <Page>
       <LoginComponent>
         {login => (
           <Formik
@@ -30,7 +30,7 @@ export default () => {
 
               // setErrors(errors);
 
-              // ! app would crash before getting to the console.log below
+              // ! app crashes before getting to the console.log below
               // console.log(response);
               // if (response.errors) {
               //   console.log(response.errors);
@@ -60,6 +60,6 @@ export default () => {
           </Formik>
         )}
       </LoginComponent>
-    </Layout>
+    </Page>
   );
 };

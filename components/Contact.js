@@ -36,7 +36,7 @@ const Contact = () => {
         }}
         onClick={() => SetModalIsOpen(true)}
       >
-        Hit us up
+        Contact
       </Button>
 
       <Modal

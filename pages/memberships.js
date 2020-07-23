@@ -1,18 +1,39 @@
-import Page from '../src/components/Page';
+import { Text, Flex } from 'theme-ui';
+import Page from '../components/Page';
 
-const About = () => {
+const Memberships = () => {
   return (
     <Page>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, labore
-      ut! Blanditiis facilis laudantium, necessitatibus eum distinctio ut cum
-      nisi itaque reprehenderit cumque repellat sequi. Aliquam nulla enim
-      aperiam. Soluta, fugit officiis! Aliquid in sequi ab velit itaque deserunt
-      nostrum eius, dolor harum. Laudantium veritatis mollitia repellat
-      accusamus animi eius ut, esse facere tempore rerum, quos similique? Beatae
-      praesentium assumenda modi quae? Explicabo quaerat nobis consequuntur,
-      molestiae ab nulla officia rerum aliquid, quos quam blanditiis animi ex
-      labore fugiat laboriosam.
+      <Flex
+        sx={{
+          alignItems: 'center',
+          justifyContent: 'space-around',
+        }}
+      >
+        <Text>
+          <h1>FREE VISIT</h1>
+          <p>
+            Not sure if this is the place for you? Try out the Virtual Dojo
+            Vienna on your first visit at no extra costs.
+          </p>
+          <h3>0€</h3>
+          <br />
+          <h1>Day Membership</h1>
+          <p>
+            Are you visiting rarely or just taking part in tournaments? Become a
+            member for one day and come back soon.
+          </p>
+          <h3>7€</h3>
+          <br />
+          <h1>Full Membership</h1>
+          <p>
+            There is no place like the Dojo? Become a full member and enjoy
+            everything the Virtual Dojo Vienna has to offer.
+          </p>
+          <h3>25€</h3>
+        </Text>
+      </Flex>
     </Page>
   );
 };
-export default About;
+export default Memberships;

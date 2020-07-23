@@ -1,34 +1,39 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import { LoginComponent } from '../generated/apolloComponents';
+import { Text } from 'theme-ui';
+import Page from '../components/Page';
 
 const IndexPage = () => (
-  <Layout title='Virtual Dojo Vienna'>
-    <h1>hello Next.js 👋</h1>
-    <p>
-      <Link href='/about'>
-        <a>About</a>
-      </Link>
-    </p>
-    <LoginComponent>
-      {mutate => (
-        <button
-          onClick={async () => {
-            const response = await mutate({
-              variables: { email: 'test@test.com ', password: 'password' },
-            });
-            if (response && response?.data) {
-              response.data.login;
-            }
+  <Page>
+    <h1>Virtual Dojo Vienna</h1>
 
-            console.log(response);
-          }}
-        >
-          call login mutation
-        </button>
-      )}
-    </LoginComponent>
-  </Layout>
+    <Text>
+      <p>
+        The Virtual Dojo Vienna enables people of all backgrounds to come
+        together and enjoy fighting games the way they are meant to be played.
+        Competitively.
+      </p>
+    </Text>
+  </Page>
 );
 
 export default IndexPage;
+
+{
+  /* <LoginComponent>
+  {mutate => (
+    <button
+      onClick={async () => {
+        const response = await mutate({
+          variables: { email: 'test@test.com ', password: 'password' },
+        });
+        if (response && response?.data) {
+          response.data.login;
+        }
+
+        console.log(response);
+      }}
+    >
+      call login mutation
+    </button>
+  )}
+</LoginComponent> */
+}
