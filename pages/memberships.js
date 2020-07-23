@@ -6,12 +6,13 @@ const Memberships = () => {
     <Page>
       <Flex
         sx={{
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'space-around',
         }}
       >
         <Text>
-          <h1>FREE VISIT</h1>
+          <h1>Free Visit</h1>
           <p>
             Not sure if this is the place for you? Try out the Virtual Dojo
             Vienna on your first visit at no extra costs.

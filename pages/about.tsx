@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Text, Flex } from 'theme-ui';
 import Page from '../components/Page';
 
@@ -6,9 +5,9 @@ const AboutPage = () => (
   <Page>
     <Flex
       sx={{
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-around',
-        flexDirection: 'column',
       }}
     >
       <Text>
@@ -19,11 +18,6 @@ const AboutPage = () => (
       <p>
         Engage with people that share the same passion casually or participate
         in our local ranking tournaments.
-      </p>
-      <p>
-        <Link href='/'>
-          <a>See us at home</a>
-        </Link>
       </p>
     </Flex>
   </Page>
