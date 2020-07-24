@@ -1,14 +1,14 @@
-import { Field, Formik } from 'formik';
-import { NextPageContext } from 'next';
-import Router from 'next/router';
 import React from 'react';
+import { NextPageContext } from 'next';
+import { Field, Formik } from 'formik';
+import Router from 'next/router';
 import { InputField } from '../components/fields//InputFields';
-import Layout from '../components/Layout';
+import Page from '../components/Page';
 import { ChangePasswordMutationComponent } from '../generated/apolloComponents';
 
 const ChangePassword = ({ token }: { token: string }) => {
   return (
-    <Layout title='Change Password page'>
+    <Page>
       <ChangePasswordMutationComponent>
         {changePassword => (
           <Formik
@@ -42,14 +42,11 @@ const ChangePassword = ({ token }: { token: string }) => {
           </Formik>
         )}
       </ChangePasswordMutationComponent>
-    </Layout>
+    </Page>
   );
 };
 
-ChangePassword.getInitialProps = ({
-  query: { token },
-}: // @ts-ignore
-NextPageContext<{ token }>) => {
+ChangePassword.getInitialProps = ({ query: { token } }: NextPageContext) => {
   return {
     token,
   };

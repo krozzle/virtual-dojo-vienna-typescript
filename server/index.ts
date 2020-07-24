@@ -10,6 +10,7 @@ const handle = routes.getRequestHandler(app);
 app.prepare().then(() => {
   createServer((req, res) => {
     handle(req, res);
+    // @ts-ignore
   }).listen(port, (err: any) => {
     if (err) throw err;
     console.log(`> Ready on http://localhost:${port}`);
