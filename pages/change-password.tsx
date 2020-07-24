@@ -1,5 +1,5 @@
 import { Field, Formik } from 'formik';
-import { NextContext } from 'next';
+import { NextPageContext } from 'next';
 import Router from 'next/router';
 import React from 'react';
 import { InputField } from '../components/fields//InputFields';
@@ -48,7 +48,8 @@ const ChangePassword = ({ token }: { token: string }) => {
 
 ChangePassword.getInitialProps = ({
   query: { token },
-}: NextContext<{ token: string }>) => {
+}: // @ts-ignore
+NextPageContext<{ token: string }>) => {
   return {
     token,
   };
