@@ -49,7 +49,7 @@ const ChangePassword = ({ token }: { token: string }) => {
 ChangePassword.getInitialProps = ({
   query: { token },
 }: // @ts-ignore
-NextPageContext<{ token: string }>) => {
+NextPageContext<{ token }>) => {
   return {
     token,
   };
