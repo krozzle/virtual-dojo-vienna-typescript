@@ -23,7 +23,7 @@ const ChangePassword = ({ token }: { token: string }) => {
                   },
                 },
               });
-              console.log(response);
+              console.log(response, token);
               // const router = useRouter();
               Router.push('/');
 
