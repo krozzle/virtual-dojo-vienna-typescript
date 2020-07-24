@@ -4,9 +4,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p ${PORT:-\"3000\"}",
     "type-check": "tsc",
-    "generate": "graphql-codegen --config codegen.yml"
+    "generate": "graphql-codegen --config codegen.yml",
+    "heroku-postbuild": "yarn migrate up && yarn build"
   },
   "dependencies": {
     "@types/graphql": "^14.5.0",
@@ -15,6 +16,8 @@
     "apollo-link-error": "^1.1.13",
     "apollo-link-http": "^1.5.17",
     "cookie": "^0.4.1",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^3.2.0",
     "formik": "^2.1.5",
     "global": "^4.4.0",
     "graphql": "^15.3.0",
@@ -24,6 +27,7 @@
     "graphql-codegen-typescript-react-apollo": "^0.18.2",
     "isomorphic-fetch": "^2.2.1",
     "isomorphic-unfetch": "^3.0.0",
+    "ley": "^0.5.0",
     "next": "latest",
     "next-routes": "^1.4.2",
     "react": "^16.12.0",
