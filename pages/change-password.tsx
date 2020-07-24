@@ -1,37 +1,28 @@
-import { Formik, Field } from 'formik';
-import React from 'react';
+import { Field, Formik } from 'formik';
+import { NextContext } from 'next';
 import Router from 'next/router';
-import { InputField } from '../components/fields/InputFields';
+import React from 'react';
+import { InputField } from '../components/fields//InputFields';
+import Layout from '../components/Layout';
 import { ChangePasswordMutationComponent } from '../generated/apolloComponents';
-import Page from '../components/Page';
-import { NextPageContext } from 'next';
 
 const ChangePassword = ({ token }: { token: string }) => {
   return (
-    <Page>
+    <Layout title='Change Password page'>
       <ChangePasswordMutationComponent>
         {changePassword => (
           <Formik
-            validateOnBlur={false}
-            validateOnChange={false}
             onSubmit={async data => {
               const response = await changePassword({
                 variables: {
                   data: {
                     password: data.password,
-                    token: '',
+                    token,
                   },
                 },
               });
-              console.log(response, token);
-              // const router = useRouter();
+              console.log(response);
               Router.push('/');
-
-              // ! app would crash before getting to the console.log below
-              // console.log(response);
-              // if (response.errors) {
-              //   console.log(response.errors);
-              // }
             }}
             initialValues={{
               password: '',
@@ -45,20 +36,19 @@ const ChangePassword = ({ token }: { token: string }) => {
                   component={InputField}
                   type='password'
                 />
-
                 <button type='submit'>change password</button>
               </form>
             )}
           </Formik>
         )}
       </ChangePasswordMutationComponent>
-    </Page>
+    </Layout>
   );
 };
 
 ChangePassword.getInitialProps = ({
   query: { token },
-}: NextPageContext<{ token: string }>) => {
+}: NextContext<{ token: string }>) => {
   return {
     token,
   };
