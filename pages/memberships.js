@@ -13,6 +13,7 @@ const Memberships = () => {
       >
         <Text>
           <h1>Free Visit</h1>
+          <br />
           <p>
             Not sure if this is the place for you? Try out the Virtual Dojo
             Vienna on your first visit at no extra costs.

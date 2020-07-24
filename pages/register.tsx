@@ -1,9 +1,9 @@
 import { Formik, Field } from 'formik';
 import React from 'react';
+import Router from 'next/router';
 import Layout from '../components/Layout';
 import { InputField } from '../components/fields/InputFields';
 import { RegisterComponent } from '../generated/apolloComponents';
-import { useRouter } from 'next/router';
 
 export default () => {
   return (
@@ -21,8 +21,8 @@ export default () => {
                   },
                 });
                 console.log(response);
-                const router = useRouter();
-                router.push('/check-email');
+                // const router = useRouter();
+                Router.push('/check-email');
               } catch (err) {
                 // to get better error messaging, use Object.keys(err) and go from there (ie: looking for validationErrors)
                 // console.log('err: ', err.graphQLErrors);

@@ -69,8 +69,15 @@ const Page = ({ children }) => (
 
             <NavLink href='/memberships'>Memberships</NavLink>
 
-            <NavLink href='/login/'>Log In</NavLink>
+            <NavLink href='/hello/'>hello</NavLink>
 
+            <NavLink href='/forgot-password/'>forgot password</NavLink>
+
+            <NavLink href='/login/'>Login</NavLink>
+
+            {/* hide 'logout' when not logged in */}
+            {/* MeComponent */}
+            <NavLink href='/logout/'>logout</NavLink>
             <Contact
             // sx={{
             //   justifySelf: 'flex-end',

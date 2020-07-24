@@ -1,10 +1,11 @@
 import { Formik, Field } from 'formik';
 import React from 'react';
-import { Text, Flex } from 'theme-ui';
+import { Flex } from 'theme-ui';
 import { InputField } from '../components/fields/InputFields';
-import { LoginComponent } from '../generated/apolloComponents';
-import { useRouter } from 'next/router';
+import { LoginComponent, MeQuery } from '../generated/apolloComponents';
+import Router from 'next/router';
 import Page from '../components/Page';
+import { meQuery } from '../graphql/user/queries/me';
 
 export default () => {
   return (
@@ -14,6 +15,7 @@ export default () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'space-around',
+          m: '50px',
         }}
       >
         <LoginComponent>
@@ -25,6 +27,19 @@ export default () => {
                 // const errors: { [key: string]: string } = {};
                 const response = await login({
                   variables: data,
+                  // clearing cache
+                  update: (cache, { data }) => {
+                    if (!data || !data.login) {
+                      return;
+                    }
+                    cache.writeQuery<MeQuery>({
+                      query: meQuery,
+                      data: {
+                        __typename: 'Query',
+                        me: data.login,
+                      },
+                    });
+                  },
                 });
                 console.log(response);
                 if (response && response.data && !response.data.login) {
@@ -33,8 +48,8 @@ export default () => {
                   });
                   return;
                 }
-                const router = useRouter();
-                router.push('/');
+                // const router = useRouter();
+                Router.push('/');
 
                 // setErrors(errors);
 
