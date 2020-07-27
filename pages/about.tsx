@@ -10,15 +10,16 @@ const AboutPage = () => (
         justifyContent: 'space-around',
       }}
     >
+      <h1>Who We Be</h1>
       <Text>
-        <h1>Who We Be</h1>
         As the home of Austria's fighting game community, we provide a place to
         meet and get together with fighting game enthusiasts.
       </Text>
-      <p>
+      <br />
+      <Text>
         Engage with people that share the same passion casually or participate
         in our local ranking tournaments.
-      </p>
+      </Text>
     </Flex>
   </Page>
 );

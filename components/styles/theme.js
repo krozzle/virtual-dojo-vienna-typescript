@@ -52,6 +52,9 @@ export default {
       height: '1.2em',
       mx: '0.2em',
     },
+    headerLogo: {
+      maxWidth: '50%',
+    },
   },
 
   sizes: {
@@ -59,6 +62,9 @@ export default {
   },
   flex: {},
   text: {
+    default: {
+      fontFamily: 'body',
+    },
     footer: {
       mx: '0.2em',
       fontSize: '0.85em',

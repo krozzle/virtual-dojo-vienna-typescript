@@ -2,7 +2,7 @@
 // enables theme-ui in <jsx>
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { jsx, Box, Button, Flex, Textarea } from 'theme-ui';
+import { jsx, Box, Input, Button, Flex, Textarea } from 'theme-ui';
 
 const Contact = () => {
   const [modalIsOpen, SetModalIsOpen] = useState(false);
@@ -54,7 +54,7 @@ const Contact = () => {
             alignItems: 'center',
           }}
         >
-          <h2>Tell us wassup</h2>
+          <h2>Contact us</h2>
           <Button
             onClick={() => SetModalIsOpen(false)}
             sx={{
@@ -66,12 +66,14 @@ const Contact = () => {
             &times;
           </Button>
         </Flex>
+        <Input placeholder='Email address' />
+        <br />
         <Textarea
           variant='modal'
           name='email-us'
           cols='30'
           rows='10'
-          placeholder='say what...'
+          placeholder='Talk to us...'
           autoFocus
         />
         <Button sx={{ mt: '0.5em' }}>Submit</Button>

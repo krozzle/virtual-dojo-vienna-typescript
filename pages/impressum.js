@@ -21,7 +21,8 @@ const Impressum = () => {
         <h3>Phone</h3> <p>+43 1 27 67 824</p>
         <br />
         <h3>Bank</h3>
-        <p>IBAN AT94 2011 1842 6118 4800 BIC GIBAATWWXXX</p>
+        <p>IBAN: AT94 2011 1842 6118 4800</p>
+        <p>BIC: GIBAATWWXXX</p>
       </Flex>
     </Page>
   );

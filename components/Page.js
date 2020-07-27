@@ -29,7 +29,10 @@ const Page = ({ children }) => (
             justifyContent: 'space-around',
           }}
         >
-          <Text
+          <a href='/'>
+            <Image variant='headerLogo' src='/vdvlogo.png' />
+          </a>
+          {/* <Text
             sx={{
               fontFamily: 'body',
               fontSize: 4,
@@ -61,7 +64,7 @@ const Page = ({ children }) => (
               </Text>{' '}
               Vienna
             </Link>
-          </Text>
+          </Text> */}
           <Flex as='nav'>
             <NavLink href='/'>Home</NavLink>
 
@@ -69,15 +72,15 @@ const Page = ({ children }) => (
 
             <NavLink href='/memberships'>Memberships</NavLink>
 
-            <NavLink href='/hello/'>hello</NavLink>
+            {/* <NavLink href='/hello/'>hello</NavLink> */}
 
-            <NavLink href='/forgot-password/'>forgot password</NavLink>
+            {/* <NavLink href='/forgot-password/'>forgot password</NavLink> */}
 
-            <NavLink href='/login/'>Login</NavLink>
+            {/* <NavLink href='/login/'>Login</NavLink> */}
 
             {/* hide 'logout' when not logged in */}
             {/* MeComponent */}
-            <NavLink href='/logout/'>logout</NavLink>
+            {/* <NavLink href='/logout/'>logout</NavLink> */}
             <Contact
             // sx={{
             //   justifySelf: 'flex-end',
@@ -91,7 +94,16 @@ const Page = ({ children }) => (
         </Flex>
       </Container>
     </Box>
-    <main>{children}</main>
+    <Box
+    // todo add background image..sizing is off
+    // sx={{
+    //   background: 'center / contain no-repeat url(/header.png)',
+    //   backgroundSize: 'contain',
+    // }}
+    // as='main'
+    >
+      <Container>{children}</Container>
+    </Box>
     <Box
       sx={{
         width: '100vw',
@@ -136,7 +148,7 @@ const Page = ({ children }) => (
             <Image variant='socials' src='/facebook.svg' />
           </a>
         </Flex>
-        <Text sx={{ justifySelf: 'center' }}>
+        <Text variant='default' sx={{ justifySelf: 'center' }}>
           © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
         </Text>
         <Flex
