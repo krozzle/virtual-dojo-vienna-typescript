@@ -5,10 +5,13 @@ const palette = {
   border: '#293133',
 };
 
+const body =
+  "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
+
 export default {
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
+    body,
+    heading: body,
     monospace: 'Menlo, monospace',
     fontSizes: [12, 16, 20, 24, 32, 48],
   },
@@ -46,6 +49,26 @@ export default {
       minHeight: '35vh',
     },
   },
+  span: {
+    firstLetterBox: {
+      color: 'primary',
+      fontSize: '1.15em',
+      letterSpacing: '0.005em',
+    },
+  },
+  box: {
+    main: {
+      width: '50vw',
+    },
+    firstLetterBox: {
+      color: 'primary',
+      fontSize: '1.15em',
+      letterSpacing: '0.005em',
+    },
+    pageContent: {
+      width: '30vw',
+    },
+  },
   images: {
     socials: {
       width: '1.2em',
@@ -53,17 +76,40 @@ export default {
       mx: '0.2em',
     },
     headerLogo: {
-      maxWidth: '50%',
+      width: '50%',
     },
   },
-
+  link: {
+    bottomRightLinks: {},
+  },
   sizes: {
     container: 960,
   },
-  flex: {},
   text: {
     default: {
       fontFamily: 'body',
+    },
+    defaultHeading: {
+      fontFamily: 'body',
+      color: 'white',
+      textTransform: 'uppercase',
+      fontSize: '56px',
+      py: '0.5em',
+      my: 'auto',
+      fontWeight: '900',
+      textAlign: 'center',
+      letterSpacing: '6px',
+    },
+    pageText: {
+      fontFamily: 'body',
+      textAlign: 'center',
+      color: 'white',
+      fontSize: '5',
+      alignContent: 'center',
+      my: '0.82em',
+      mx: '0.82em',
+      // py: '0.82em',
+      px: '10em',
     },
     footer: {
       mx: '0.2em',
@@ -84,7 +130,8 @@ export default {
       fontFamily: 'body',
       fontWeight: 'normal',
       textTransform: 'uppercase',
-      fontSize: 1,
+      fontSize: 2,
+      mx: '0.5em',
     },
   },
 };

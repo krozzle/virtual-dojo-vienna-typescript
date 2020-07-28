@@ -20,6 +20,9 @@ export type User = {
   id: Scalars['ID'];
   firstName: Scalars['String'];
   lastName: Scalars['String'];
+  handle: Scalars['String'];
+  mainGame: Scalars['String'];
+  sideGame: Scalars['String'];
   email: Scalars['String'];
   name: Scalars['String'];
 };
@@ -40,6 +43,7 @@ export type Query = {
   __typename?: 'Query';
   me?: Maybe<User>;
   hello: Scalars['String'];
+  users: Array<User>;
 };
 
 export type Mutation = {

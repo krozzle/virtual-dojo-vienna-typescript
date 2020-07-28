@@ -12,6 +12,10 @@ const Page = ({ children }) => (
     <Head>
       <title>Virtual Dojo Vienna</title>
       <link rel='icon' href='/vdv-logo.jpg' />
+      <link
+        href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap'
+        rel='stylesheet'
+      />
     </Head>
     <Box
       sx={{
@@ -95,14 +99,18 @@ const Page = ({ children }) => (
       </Container>
     </Box>
     <Box
-    // todo add background image..sizing is off
-    // sx={{
-    //   background: 'center / contain no-repeat url(/header.png)',
-    //   backgroundSize: 'contain',
-    // }}
-    // as='main'
+      // todo add background image..sizing is off
+      sx={{
+        background: 'no-repeat url(/header.png)',
+        backgroundColor: 'black',
+        opacity: 0.9,
+
+        backgroundSize: '100% 90%',
+        height: '90vh',
+      }}
+      // as='main'
     >
-      <Container>{children}</Container>
+      <Box variant='main'>{children}</Box>
     </Box>
     <Box
       sx={{
@@ -110,7 +118,7 @@ const Page = ({ children }) => (
         position: 'fixed',
         background: 'white',
         color: 'black',
-        opacity: 0.75,
+        opacity: 0.15,
         bottom: '0',
         py: 4,
         px: 3,
@@ -148,7 +156,7 @@ const Page = ({ children }) => (
             <Image variant='socials' src='/facebook.svg' />
           </a>
         </Flex>
-        <Text variant='default' sx={{ justifySelf: 'center' }}>
+        <Text sx={{ justifySelf: 'center' }}>
           © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
         </Text>
         <Flex
@@ -156,11 +164,21 @@ const Page = ({ children }) => (
             justifyContent: 'space-between',
           }}
         >
-          <Link href='/statuten'>
-            <Text variant='footer'>Vereinsstatuten</Text>
+          <Link
+            href='/statuten'
+            sx={{
+              mx: 1,
+            }}
+          >
+            <Text>Vereinsstatuten</Text>
           </Link>
-          <Link href='/impressum'>
-            <Text variant='footer'>Impressum</Text>
+          <Link
+            href='/impressum'
+            sx={{
+              mx: 1,
+            }}
+          >
+            <Text>Impressum</Text>
           </Link>
         </Flex>
       </Flex>

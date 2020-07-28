@@ -10,8 +10,7 @@ const Contact = () => {
   const customStyles = {
     content: {
       position: 'fixed',
-      minWidth: '50vw',
-      maxWidth: '80vw',
+      width: '45vw',
       maxHeight: '70vh',
       top: '50vh',
       left: '50vw',
@@ -31,8 +30,10 @@ const Contact = () => {
         sx={{
           backgroundColor: 'primary',
           minHeight: '2em',
-          maxHeight: '2.3em',
-          fontSize: '0.9em',
+          maxHeight: '2em',
+          fontSize: '2',
+          cursor: 'pointer',
+          // borderRadius: '30%',
         }}
         onClick={() => SetModalIsOpen(true)}
       >
@@ -66,13 +67,13 @@ const Contact = () => {
             &times;
           </Button>
         </Flex>
-        <Input placeholder='Email address' />
+        <Input placeholder='Your email address' />
         <br />
         <Textarea
           variant='modal'
           name='email-us'
-          cols='30'
-          rows='10'
+          cols='20'
+          rows='5'
           placeholder='Talk to us...'
           autoFocus
         />
