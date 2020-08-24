@@ -1,7 +1,3 @@
-# Deprecated
-
-This project will no longer be maintained.
-
 ## Virtual Dojo Vienna webpage
 
 Technologies used:
