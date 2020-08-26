@@ -4,6 +4,10 @@ import Page from '../components/Page';
 const Memberships = () => {
   return (
     <Page>
+      {/* <div class='w-full p-2 h-20 text-center bg-gray-700 opacity-75 text-white text-4xl uppercase'>
+        home of the austrian fighting game community since 2010
+      </div> */}
+
       <div class='flex justify-around p-5'>
         <div class='max-w-xs m-4 rounded bg-black bg-opacity-50 overflow-hidden shadow-lg'>
           <img
@@ -50,8 +54,8 @@ const Memberships = () => {
           </div>
           <div class='text-white py-3 text-center p-2'>
             {' '}
-            Are you visiting rarely or just taking part in tournaments? Become a
-            member for one day and come back soon.
+            There is no place like the Dojo? Become a full member and enjoy
+            everything the Virtual Dojo Vienna has to offer.
           </div>
           <div class='text-white text-center p-2'>25€</div>
         </div>
