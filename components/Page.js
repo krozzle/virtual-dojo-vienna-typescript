@@ -17,26 +17,27 @@ const Page = ({ children }) => (
         rel='stylesheet'
       />
     </Head>
-    <Box
-      sx={{
-        background: 'black',
-        opacity: 0.9,
-        py: 4,
-        px: 3,
-      }}
-      as='header'
-    >
-      <Container>
-        <Flex
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'space-around',
-          }}
-        >
-          <a href='/'>
-            <Image variant='headerLogo' src='/vdvlogo.png' />
-          </a>
-          {/* <Text
+    <div class='bg-hero-pattern bg-black'>
+      <Box
+        sx={{
+          // background: 'black',
+          // opacity: 0.1,
+          py: 4,
+          px: 3,
+        }}
+        as='header'
+      >
+        <Container>
+          <Flex
+            sx={{
+              alignItems: 'center',
+              justifyContent: 'space-around',
+            }}
+          >
+            <a href='/'>
+              <Image variant='headerLogo' src='/vdvlogo.png' />
+            </a>
+            {/* <Text
             sx={{
               fontFamily: 'body',
               fontSize: 4,
@@ -69,120 +70,121 @@ const Page = ({ children }) => (
               Vienna
             </Link>
           </Text> */}
-          <Flex as='nav'>
-            <NavLink href='/'>Home</NavLink>
+            <Flex as='nav'>
+              <NavLink href='/'>Home</NavLink>
 
-            <NavLink href='/about'>About</NavLink>
+              <NavLink href='/about'>About</NavLink>
 
-            <NavLink href='/memberships'>Memberships</NavLink>
+              <NavLink href='/memberships'>Memberships</NavLink>
 
-            {/* <NavLink href='/hello/'>hello</NavLink> */}
+              {/* <NavLink href='/hello/'>hello</NavLink> */}
 
-            {/* <NavLink href='/forgot-password/'>forgot password</NavLink> */}
+              {/* <NavLink href='/forgot-password/'>forgot password</NavLink> */}
 
-            {/* <NavLink href='/login/'>Login</NavLink> */}
+              {/* <NavLink href='/login/'>Login</NavLink> */}
 
-            {/* hide 'logout' when not logged in */}
-            {/* MeComponent */}
-            {/* <NavLink href='/logout/'>logout</NavLink> */}
-            <Contact
-            // sx={{
-            //   justifySelf: 'flex-end',
-            // }}
-            />
-            {/* <NavLink href='/prices'>Prices</NavLink> */}
-            {/* fused with Memberships!! */}
+              {/* hide 'logout' when not logged in */}
+              {/* MeComponent */}
+              {/* <NavLink href='/logout/'>logout</NavLink> */}
+              <Contact
+              // sx={{
+              //   justifySelf: 'flex-end',
+              // }}
+              />
+              {/* <NavLink href='/prices'>Prices</NavLink> */}
+              {/* fused with Memberships!! */}
 
-            {/* <NavLink href='/contact'>Contact Us</NavLink> */}
+              {/* <NavLink href='/contact'>Contact Us</NavLink> */}
+            </Flex>
           </Flex>
-        </Flex>
-      </Container>
-    </Box>
-    <Box
-      // todo add background image..sizing is off
-      sx={{
-        background: 'no-repeat url(/header.png)',
-        backgroundColor: 'black',
-        opacity: 0.9,
-
-        backgroundSize: '100% 90%',
-        height: '90vh',
-      }}
-      // as='main'
-    >
-      <Box variant='main'>{children}</Box>
-    </Box>
-    <Box
-      sx={{
-        width: '100vw',
-        position: 'fixed',
-        background: 'white',
-        color: 'black',
-        opacity: 0.15,
-        bottom: '0',
-        py: 4,
-        px: 3,
-      }}
-      as='footer'
-    >
-      <Flex
+        </Container>
+      </Box>
+      <Box
+        // todo add background image..sizing is off
         sx={{
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          alignContent: 'center',
-          // width: '50vw',
+          // background: 'no-repeat url(/header.png)',
+          // backgroundColor: 'black',
+          opacity: 0.9,
+
+          backgroundSize: '100% 90%',
+          height: '90vh',
         }}
+        // as='main'
+      >
+        <Box variant='main'>{children}</Box>
+      </Box>
+      <Box
+        sx={{
+          width: '100vw',
+          position: 'fixed',
+          background: 'white',
+          color: 'black',
+          opacity: 0.15,
+          bottom: '0',
+          py: 4,
+          px: 3,
+        }}
+        as='footer'
       >
         <Flex
           sx={{
-            justifyContent: 'space-between',
-            // flexDirection: 'column',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+            alignContent: 'center',
+            // width: '50vw',
           }}
         >
-          <Text>Follow us</Text>
-          <a href='https://www.twitch.tv/virtualdojovienna'>
-            <Image variant='socials' src='/twitch.svg' />
-          </a>
-          <a href='https://youtube.com/virtualdojovienna'>
-            <Image variant='socials' src='/youtube.svg' />
-          </a>
-          <a href='https://twitter.com/virtualdojo'>
-            <Image variant='socials' src='/twitter.svg' />
-          </a>
-          <a href='https://www.instagram.com/virtualdojovienna'>
-            <Image variant='socials' src='/instagram.svg' />
-          </a>
-          <a href='https://www.facebook.com/VirtualDojoVienna/'>
-            <Image variant='socials' src='/facebook.svg' />
-          </a>
-        </Flex>
-        <Text sx={{ justifySelf: 'center' }}>
-          © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
-        </Text>
-        <Flex
-          sx={{
-            justifyContent: 'space-between',
-          }}
-        >
-          <Link
-            href='/statuten'
+          <Flex
             sx={{
-              mx: 1,
+              justifyContent: 'space-between',
+              // flexDirection: 'column',
             }}
           >
-            <Text>Vereinsstatuten</Text>
-          </Link>
-          <Link
-            href='/impressum'
+            <Text>Follow us</Text>
+            <a href='https://www.twitch.tv/virtualdojovienna'>
+              <Image variant='socials' src='/twitch.svg' />
+            </a>
+            <a href='https://youtube.com/virtualdojovienna'>
+              <Image variant='socials' src='/youtube.svg' />
+            </a>
+            <a href='https://twitter.com/virtualdojo'>
+              <Image variant='socials' src='/twitter.svg' />
+            </a>
+            <a href='https://www.instagram.com/virtualdojovienna'>
+              <Image variant='socials' src='/instagram.svg' />
+            </a>
+            <a href='https://www.facebook.com/VirtualDojoVienna/'>
+              <Image variant='socials' src='/facebook.svg' />
+            </a>
+          </Flex>
+          <Text sx={{ justifySelf: 'center' }}>
+            © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
+          </Text>
+          <Flex
             sx={{
-              mx: 1,
+              justifyContent: 'space-between',
             }}
           >
-            <Text>Impressum</Text>
-          </Link>
+            <Link
+              href='/statuten'
+              sx={{
+                mx: 1,
+              }}
+            >
+              <Text>Vereinsstatuten</Text>
+            </Link>
+            <Link
+              href='/impressum'
+              sx={{
+                mx: 1,
+              }}
+            >
+              <Text>Impressum</Text>
+            </Link>
+          </Flex>
         </Flex>
-      </Flex>
-    </Box>
+      </Box>
+    </div>
   </ThemeProvider>
 );
 

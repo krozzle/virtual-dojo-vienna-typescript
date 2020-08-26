@@ -3,6 +3,7 @@ import Page from '../components/Page';
 
 const IndexPage = () => (
   <Page>
+    <button class='bg-red-500 rounded-bottom'>click me</button>
     <Heading variant='defaultHeading'>
       {/* add wrapper!! */}
       <Box
