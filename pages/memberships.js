@@ -18,12 +18,12 @@ const Memberships = () => {
           <div class='text-white font-bold text-center p-2 text-3xl'>
             Free Visit
           </div>
-          <div class='text-white py-3'>
+          <div class='text-white py-3 text-center p-2'>
             {' '}
             Not sure if this is the place for you? Try out the Virtual Dojo
             Vienna on your first visit at no extra costs.
           </div>
-          <div class='text-white'>0€</div>
+          <div class='text-white text-center p-2'>0€</div>
         </div>
 
         <div class='max-w-xs m-4 rounded bg-black bg-opacity-50 overflow-hidden shadow-lg'>
