@@ -116,12 +116,12 @@ const Page = ({ children }) => (
       <Box
         sx={{
           width: '100vw',
-          position: 'fixed',
-          background: 'white',
-          color: 'black',
-          opacity: 0.15,
-          bottom: '0',
-          py: 4,
+          // position: 'absolute',
+          background: 'black',
+          color: 'white',
+          opacity: 0.9,
+          // bottom: '0',
+          py: 2,
           px: 3,
         }}
         as='footer'
@@ -136,7 +136,7 @@ const Page = ({ children }) => (
         >
           <Flex
             sx={{
-              justifyContent: 'space-between',
+              justifyContent: 'space-around',
               // flexDirection: 'column',
             }}
           >
@@ -162,7 +162,7 @@ const Page = ({ children }) => (
           </Text>
           <Flex
             sx={{
-              justifyContent: 'space-between',
+              justifyContent: 'space-around',
             }}
           >
             <Link

@@ -1,4 +1,3 @@
-import { Text, Flex } from 'theme-ui';
 import Page from '../components/Page';
 
 const Memberships = () => {
@@ -60,8 +59,8 @@ const Memberships = () => {
           <div class='text-white text-center p-2'>25€</div>
         </div>
 
-        <div class='flex flex-col'>
-          {/* <h2 class='text-white'>Day Membership</h2>
+        {/* <div class='flex flex-col'>
+          <h2 class='text-white'>Day Membership</h2>
           Are you visiting rarely or just taking part in tournaments? Become a
           member for one day and come back soon.
           <h3>7€</h3>
@@ -70,8 +69,8 @@ const Memberships = () => {
           <h2>Full Membership</h2>
           There is no place like the Dojo? Become a full member and enjoy
           everything the Virtual Dojo Vienna has to offer.
-          <h3>25€</h3> */}
-        </div>
+          <h3>25€</h3>
+        </div> */}
       </div>
     </Page>
   );
