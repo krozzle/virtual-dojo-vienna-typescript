@@ -1,90 +1,27 @@
-import { Box, Text, Heading } from 'theme-ui';
 import Page from '../components/Page';
 
 const IndexPage = () => (
   <Page>
-    <button class='bg-red-500 rounded-bottom'>click me</button>
-    <Heading variant='defaultHeading'>
-      {/* add wrapper!! */}
-      <Box
-        as='span'
-        sx={{
-          color: 'primary',
-          fontSize: '1.15em',
-          letterSpacing: '0.005em',
-        }}
-      >
-        V
-      </Box>
-      irtual{' '}
-      <Box
-        as='span'
-        sx={{
-          color: 'primary',
-          fontSize: '1.15em',
-          letterSpacing: '0.005em',
-        }}
-      >
-        D
-      </Box>
-      ojo{' '}
-      <Box
-        as='span'
-        sx={{
-          color: 'primary',
-          fontSize: '1.15em',
-          letterSpacing: '0.005em',
-        }}
-      >
-        V
-      </Box>
-      ienna
-    </Heading>
-    <Box />
-    {/* add wrapper!! */}
-    <Box variant='pageContent'>
-      <Text variant='pageText' as='p'>
-        Providing A Home For The Fighting Game Community
-      </Text>
-    </Box>
-    <Box variant='pageContent'>
-      <Text variant='pageText' as='p'>
-        Since 2010
-      </Text>
-    </Box>
-    <Box variant='pageContent'>
-      <Text variant='pageText' as='p'>
-        Enabling People Of All Backgrounds To Get Together And Enjoy Fighting
-        Games The Way They Are Meant To Be Played.
-      </Text>
-    </Box>
-    <Box variant='pageContent'>
-      <Text variant='pageText' as='p'>
-        Competitively.
-      </Text>
-    </Box>
+    <div class='flex min-h-full justify-around p-2 my-2'>
+      <div>
+        <div class='text-white text-3xl bg-white bg-opacity-25 font-bold p-2 text-center uppercase'>
+          Home of the Austrian Fighting Game Community.{' '}
+        </div>
+        <div class='text-white text-3xl bg-white bg-opacity-25 font-bold p-2 text-center uppercase'>
+          Since 2010.{' '}
+        </div>
+      </div>
+      <div class='flex flex-col  justify-around text-white bg-black bg-opacity-75 p-2 text-center text-2xl '>
+        <div class=''>
+          Enabling people of all backgrounds to get together and enjoy Fighting
+          Games the way they are meant to be played.
+        </div>
+        <div class='text-white bg-black bg-opacity-75 p-2 text-center text-2xl uppercase'>
+          Competitively.
+        </div>
+      </div>
+    </div>
   </Page>
 );
 
 export default IndexPage;
-
-{
-  /* <LoginComponent>
-  {mutate => (
-    <button
-      onClick={async () => {
-        const response = await mutate({
-          variables: { email: 'test@test.com ', password: 'password' },
-        });
-        if (response && response?.data) {
-          response.data.login;
-        }
-
-        console.log(response);
-      }}
-    >
-      call login mutation
-    </button>
-  )}
-</LoginComponent> */
-}
