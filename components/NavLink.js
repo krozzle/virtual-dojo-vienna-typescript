@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 
 const NavLink = ({ children, sx, ...props }) => (
   <NextLink {...props} passHref>
-    <ThemeUINavLink as='a' sx={sx}>
+    <ThemeUINavLink as="a" sx={sx}>
       {children}
     </ThemeUINavLink>
   </NextLink>

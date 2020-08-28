@@ -67,14 +67,14 @@ const Contact = () => {
             &times;
           </Button>
         </Flex>
-        <Input placeholder='Your email address' />
+        <Input placeholder="Your email address" />
         <br />
         <Textarea
-          variant='modal'
-          name='email-us'
-          cols='20'
-          rows='5'
-          placeholder='Talk to us...'
+          variant="modal"
+          name="email-us"
+          cols="20"
+          rows="5"
+          placeholder="Talk to us..."
           autoFocus
         />
         <Button sx={{ mt: '0.5em' }}>Submit</Button>

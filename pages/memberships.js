@@ -8,7 +8,7 @@ const Memberships = () => {
           Memberships
         </div>
         <div class="border-t w-1/5" />
-        {/* <div class='text-white text-xl px-2 py-1 text-left  w-2/3'>
+        {/* <div className='text-white text-xl px-2 py-1 text-left  w-2/3'>
           Becoming a member is simple. Contact our staff through e-mail and
           phone, or just stop by. They will guide you through the process and
           answer any questions you might have. We offer different types of
@@ -67,13 +67,13 @@ const Memberships = () => {
         </div>
       </div>
 
-      {/* <div class='flex flex-col'>
-          <h2 class='text-white'>Day Membership</h2>
+      {/* <div className='flex flex-col'>
+          <h2 className='text-white'>Day Membership</h2>
           Are you visiting rarely or just taking part in tournaments? Become a
           member for one day and come back soon.
           <h3>7€</h3>
         </div>
-        <div class='flex flex-col'>
+        <div className='flex flex-col'>
           <h2>Full Membership</h2>
           There is no place like the Dojo? Become a full member and enjoy
           everything the Virtual Dojo Vienna has to offer.
