@@ -12,14 +12,19 @@ const Impressum = () => {
         </h1>
         <div class='text-white font-bold text-left p-2 text-3xl'>Address</div>
         <div class='text-white py-3 text-left p-2'>
-          Praterstrasse 58/1/L1 1020 Vienna
+          <a
+            href='https://goo.gl/maps/tHa1X6nNoYVDq3Ky5'
+            class='hover:underline'
+          >
+            Praterstrasse 58/1/L1 1020 Vienna
+          </a>
         </div>
         <br />
         <div class='text-white font-bold text-left p-2 text-3xl'>
           Email
         </div>{' '}
         <div class='text-white py-3 text-left p-2 '>
-          <a href='mailto:office@virtualdojovienna.com'>
+          <a href='mailto:office@virtualdojovienna.com' class='hover:underline'>
             office@virtualdojovienna.com
           </a>
         </div>
