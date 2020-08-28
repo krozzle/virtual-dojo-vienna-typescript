@@ -7,10 +7,13 @@ const Memberships = () => {
         home of the austrian fighting game community since 2010
       </div> */}
 
+      <div class='font-bold my-2 text-center text-5xl text-white'>
+        Memberships
+      </div>
       <div class='flex justify-around p-5'>
-        <div class='max-w-xs m-4 rounded bg-black bg-opacity-50 overflow-hidden shadow-lg'>
+        <div class='max-w-sm m-4 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg'>
           <img
-            class='w-full'
+            class='w-full min-h-0'
             src='/danSFIV.jpg'
             alt='dan from street fighter 4'
           />
@@ -25,15 +28,13 @@ const Memberships = () => {
           <div class='text-white text-center p-2'>0€</div>
         </div>
 
-        <div class='max-w-xs m-4 rounded bg-black bg-opacity-50 overflow-hidden shadow-lg'>
+        <div class='max-w-sm m-4 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg'>
           <img
-            class='w-full'
+            class='w-full min-h-0'
             src='/danSFIV.jpg'
             alt='dan from street fighter 4'
           />
-          <div class='text-white font-bold text-center p-2 text-3xl'>
-            Day Membership
-          </div>
+          <div class='text-white font-bold text-center p-2 text-3xl'>Day</div>
           <div class='text-white py-3 text-center p-2'>
             {' '}
             Are you visiting rarely or just taking part in tournaments? Become a
@@ -42,15 +43,13 @@ const Memberships = () => {
           <div class='text-white text-center p-2'>7€</div>
         </div>
 
-        <div class='max-w-xs m-4 rounded bg-black bg-opacity-50 overflow-hidden shadow-lg'>
+        <div class='max-w-sm m-4 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg'>
           <img
-            class='w-full'
+            class='w-full min-h-0'
             src='/danSFIV.jpg'
             alt='dan from street fighter 4'
           />
-          <div class='text-white font-bold text-center p-2 text-3xl'>
-            Full Membership
-          </div>
+          <div class='text-white font-bold text-center p-2 text-3xl'>Full</div>
           <div class='text-white py-3 text-center p-2'>
             {' '}
             There is no place like the Dojo? Become a full member and enjoy
