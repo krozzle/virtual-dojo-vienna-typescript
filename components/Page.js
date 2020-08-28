@@ -11,21 +11,21 @@ const Page = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Head>
       <title>Virtual Dojo Vienna</title>
-      <link rel='icon' href='/vdv-logo.jpg' />
+      <link rel="icon" href="/vdv-logo.jpg" />
       <link
-        href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap'
-        rel='stylesheet'
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap"
+        rel="stylesheet"
       />
     </Head>
-    <div class='bg-hero-pattern bg-black'>
+    <div class="bg-hero-pattern bg-black">
       <Box
         sx={{
+          px: 3,
           // background: 'black',
           // opacity: 0.1,
           py: 4,
-          px: 3,
         }}
-        as='header'
+        as="header"
       >
         <Container>
           <Flex
@@ -34,8 +34,8 @@ const Page = ({ children }) => (
               justifyContent: 'space-around',
             }}
           >
-            <a href='/'>
-              <Image variant='headerLogo' src='/vdvlogo.png' />
+            <a href="/">
+              <Image variant="headerLogo" src="/vdvlogo.png" />
             </a>
             {/* <Text
             sx={{
@@ -70,12 +70,12 @@ const Page = ({ children }) => (
               Vienna
             </Link>
           </Text> */}
-            <Flex as='nav'>
-              <NavLink href='/'>Home</NavLink>
+            <Flex as="nav">
+              <NavLink href="/">Home</NavLink>
 
-              <NavLink href='/about'>About</NavLink>
+              <NavLink href="/about">About</NavLink>
 
-              <NavLink href='/memberships'>Memberships</NavLink>
+              <NavLink href="/memberships">Memberships</NavLink>
 
               {/* <NavLink href='/hello/'>hello</NavLink> */}
 
@@ -102,35 +102,38 @@ const Page = ({ children }) => (
       <Box
         // todo add background image..sizing is off
         sx={{
+          backgroundSize: '100% 90%',
+
+          height: '90vh',
           // background: 'no-repeat url(/header.png)',
           // backgroundColor: 'black',
           opacity: 0.9,
-
-          backgroundSize: '100% 90%',
-          height: '90vh',
         }}
         // as='main'
       >
-        <Box variant='main'>{children}</Box>
+        <Box variant="main">{children}</Box>
       </Box>
       <Box
         sx={{
-          width: '100vw',
           // position: 'absolute',
           background: 'black',
+
           color: 'white',
           opacity: 0.9,
+          px: 3,
+
           // bottom: '0',
           py: 2,
-          px: 3,
+
+          width: '100vw',
         }}
-        as='footer'
+        as="footer"
       >
         <Flex
           sx={{
-            justifyContent: 'space-around',
-            alignItems: 'center',
             alignContent: 'center',
+            alignItems: 'center',
+            justifyContent: 'space-around',
             // width: '50vw',
           }}
         >
@@ -141,20 +144,20 @@ const Page = ({ children }) => (
             }}
           >
             <Text>Follow us</Text>
-            <a href='https://www.twitch.tv/virtualdojovienna'>
-              <Image variant='socials' src='/twitch.svg' />
+            <a href="https://www.twitch.tv/virtualdojovienna">
+              <Image variant="socials" src="/twitch.svg" />
             </a>
-            <a href='https://youtube.com/virtualdojovienna'>
-              <Image variant='socials' src='/youtube.svg' />
+            <a href="https://youtube.com/virtualdojovienna">
+              <Image variant="socials" src="/youtube.svg" />
             </a>
-            <a href='https://twitter.com/virtualdojo'>
-              <Image variant='socials' src='/twitter.svg' />
+            <a href="https://twitter.com/virtualdojo">
+              <Image variant="socials" src="/twitter.svg" />
             </a>
-            <a href='https://www.instagram.com/virtualdojovienna'>
-              <Image variant='socials' src='/instagram.svg' />
+            <a href="https://www.instagram.com/virtualdojovienna">
+              <Image variant="socials" src="/instagram.svg" />
             </a>
-            <a href='https://www.facebook.com/VirtualDojoVienna/'>
-              <Image variant='socials' src='/facebook.svg' />
+            <a href="https://www.facebook.com/VirtualDojoVienna/">
+              <Image variant="socials" src="/facebook.svg" />
             </a>
           </Flex>
           <Text sx={{ justifySelf: 'center' }}>
@@ -166,7 +169,7 @@ const Page = ({ children }) => (
             }}
           >
             <Link
-              href='/statuten'
+              href="/statuten"
               sx={{
                 mx: 1,
               }}
@@ -174,7 +177,7 @@ const Page = ({ children }) => (
               <Text>Vereinsstatuten</Text>
             </Link>
             <Link
-              href='/impressum'
+              href="/impressum"
               sx={{
                 mx: 1,
               }}
