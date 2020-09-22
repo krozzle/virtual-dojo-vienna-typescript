@@ -17,7 +17,8 @@ const Page = ({ children }) => (
         rel="stylesheet"
       />
     </Head>
-    <div class="bg-hero-pattern bg-black">
+    {/* <div class="bg-hero-pattern bg-black"> */}
+    <div class="bg-gray-700">
       <Box
         sx={{
           px: 3,
