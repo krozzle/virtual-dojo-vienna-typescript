@@ -3,7 +3,7 @@ const AboutUs = () => (
     <div className="text-white text-left px-2 py-1">about us</div>
     <div className="text-black text-left text-4xl font-bold px-2 py-1 uppercase ">
       who we be
-      <div className="divide-white border-t w-32 " />
+      <div className="divide-white border-t w-32" />
     </div>
     <div className="text-white w-2/3 text-xl p-2 text-left">
       As the home of Austria's Fighting Game community, we provide a place to

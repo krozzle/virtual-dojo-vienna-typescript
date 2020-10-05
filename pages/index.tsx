@@ -1,6 +1,7 @@
 import AboutUs from '../components/about';
 import Header from '../components/Header';
 import Headline from '../components/Headline';
+import Memberships from '../components/Memberships';
 import Page from '../components/Page';
 
 const IndexPage = () => (
@@ -8,6 +9,7 @@ const IndexPage = () => (
     <Header />
     <Headline />
     <AboutUs />
+    <Memberships />
   </Page>
 );
 
