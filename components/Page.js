@@ -25,7 +25,7 @@ const Page = ({ children }) => (
         sx={{
           backgroundSize: '100% 90%',
 
-          height: '90vh',
+          // height: '90vh',
           // background: 'no-repeat url(/header.png)',
           // backgroundColor: 'black',
           opacity: 0.9,
