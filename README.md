@@ -5,7 +5,6 @@
 Technologies used:
 
 ```
-Javascript
 React
 Node.js
 Next.js
@@ -15,5 +14,5 @@ TypeGraphQL
 TypeORM
 Apollo
 Express
-Theme-UI
+TailwindCSS
 ```

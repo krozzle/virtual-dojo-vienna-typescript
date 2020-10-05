@@ -1,7 +1,11 @@
+import AboutUs from '../components/about';
+import Header from '../components/Header';
 import Page from '../components/Page';
 
 const IndexPage = () => (
   <Page>
+    <Header />
+    <AboutUs />
     <div className="flex bg-hero-pattern bg-cover h-screen bg-black flex-wrap justify-around p-2 my-2">
       <div className="flex flex-col flex-none text-right bg-black bg-opacity-50 text-white text-2xl w-1/3 h-24 bg-opacity-25 p-2 uppercase">
         <p>home of austria's</p>
