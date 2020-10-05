@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
-import { Box, Container, Image, Text, Flex, ThemeProvider } from 'theme-ui';
+import { ThemeProvider } from 'theme-ui';
 import theme from './styles/theme';
 import Link from './Link';
 import NavLink from './NavLink';
@@ -20,21 +20,8 @@ const Page = ({ children }) => (
     </Head>
     {/* <div class="bg-hero-pattern bg-black"> */}
     <div class="bg-gray-700">
-      <Box
-        // todo add background image..sizing is off
-        sx={{
-          backgroundSize: '100% 90%',
-
-          // height: '90vh',
-          // background: 'no-repeat url(/header.png)',
-          // backgroundColor: 'black',
-          opacity: 0.9,
-        }}
-        // as='main'
-      >
-        <Box variant="main">{children}</Box>
-        <Footer />
-      </Box>
+      <div>{children}</div>
+      <Footer />
     </div>
   </ThemeProvider>
 );

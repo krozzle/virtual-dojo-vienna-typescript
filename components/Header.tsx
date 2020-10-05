@@ -48,7 +48,7 @@ const Header = () => (
       <Flex as="nav">
         <NavLink href="/">Home</NavLink>
 
-        <NavLink href="/about">About</NavLink>
+        <NavLink href="/AboutUs">About</NavLink>
 
         <NavLink href="/memberships">Memberships</NavLink>
 
