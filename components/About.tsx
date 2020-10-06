@@ -1,5 +1,5 @@
 const AboutUs = () => (
-  <div className="flex flex-col w-full bg-red-700 bg-opacity-75 min-h-full justify-around p-5">
+  <div className="flex flex-col w-full bg-red-700 bg-opacity-75 min-h-full justify-around px-20">
     <div className="text-white text-left px-2 py-1">about us</div>
     <div className="text-black text-left text-4xl font-bold px-2 py-1 uppercase ">
       who we be

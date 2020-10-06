@@ -21,7 +21,6 @@ const Page = ({ children }) => (
     </Head>
     {/* <div class="bg-hero-pattern bg-black"> */}
     <div class="bg-gray-700">
-      <Header />
       <div>{children}</div>
       <Footer />
     </div>

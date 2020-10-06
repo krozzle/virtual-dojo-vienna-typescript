@@ -1,6 +1,6 @@
 const HeadlineMember = () => (
-  <div className="">
-    <div className="text-white text-center px-2 py-1">membership</div>
+  <div className="h-96 pt-8 px-20">
+    <div className="text-white text-center px-2">membership</div>
 
     <div className="flex flex-row justify-center align-center">
       <div className="font-bold text-5xl text-red-700">
