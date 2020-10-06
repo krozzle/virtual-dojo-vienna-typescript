@@ -2,7 +2,7 @@ import { Flex, Image, NavLink } from 'theme-ui';
 import Contact from './Contact';
 
 const Header = () => (
-  <div className="flex justify-around px-1 py-2">
+  <div className="flex justify-around px-1 py-2 sticky">
     <Flex
       sx={{
         alignItems: 'center',
