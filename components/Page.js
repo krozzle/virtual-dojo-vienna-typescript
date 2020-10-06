@@ -6,6 +6,7 @@ import Link from './Link';
 import NavLink from './NavLink';
 import Contact from './Contact';
 import Footer from './Footer';
+import Header from './Header';
 // import pdf from '../../public/statuten_2016.pdf';
 
 const Page = ({ children }) => (
@@ -20,6 +21,7 @@ const Page = ({ children }) => (
     </Head>
     {/* <div class="bg-hero-pattern bg-black"> */}
     <div class="bg-gray-700">
+      <Header />
       <div>{children}</div>
       <Footer />
     </div>

@@ -1,14 +1,14 @@
-import AboutUs from '../components/about';
-import Header from '../components/Header';
+import AboutUs from '../components/About';
 import Headline from '../components/Headline';
+import HeadlineMember from '../components/HeadlineMember';
 import Memberships from '../components/Memberships';
 import Page from '../components/Page';
 
 const IndexPage = () => (
   <Page>
-    <Header />
     <Headline />
     <AboutUs />
+    <HeadlineMember />
     <Memberships />
   </Page>
 );

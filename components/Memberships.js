@@ -1,62 +1,53 @@
 const Memberships = () => (
-  <div className="container p-5">
-    <div class="font-bold my-2 text-left text-5xl text-red-700">
-      Memberships
-    </div>
-    <div class="divide-white border-t w-32" />
-    <div className="text-white text-xl px-2 py-1 text-left  w-2/3">
-      Becoming a member is simple. Contact our staff through e-mail and phone,
-      or just stop by. They will guide you through the process and answer any
-      questions you might have. We offer different types of memberships so you
-      can pick the one that suits your needs the best. Find out more in the
-      section below.
-    </div>
-    <div class="flex justify-center py-5">
-      <div class="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
+  <div className="flex flex-col w-full bg-black bg-opacity-75 min-h-full justify-around p-5">
+    <div className="flex justify-around py-5">
+      <div className="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
         <img
-          class="w-full min-h-0"
+          className="w-full min-h-0"
           src="/danSFIV.jpg"
           alt="dan from street fighter 4"
         />
-        <div class="text-white font-bold text-center p-2 text-3xl">
+        <div className="text-white font-bold text-center p-2 text-3xl">
           Free Visit
         </div>
-        <div class="text-white py-3 text-left p-2">
+        <div className="text-white py-3 text-left p-2">
           {' '}
           Not sure if this is the place for you? Try out the Virtual Dojo Vienna
           on your first visit at no extra costs.
         </div>
-        <div class="text-white text-center p-2">0€</div>
+        <div className="text-white text-center p-2">0€</div>
       </div>
 
-      <div class="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
+      <div className="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
         <img
-          class="w-full min-h-0"
+          className="w-full min-h-0"
           src="/danSFIV.jpg"
           alt="dan from street fighter 4"
         />
-        <div class="text-white font-bold text-center p-2 text-3xl">Day</div>
-        <div class="text-white py-3 text-left p-2">
+        <div className="text-white font-bold text-center p-2 text-3xl">Day</div>
+        <div className="text-white py-3 text-left p-2">
           {' '}
-          Are you visiting rarely or just taking part in tournaments? Become a
-          member for one day and come back soon.
+          Are you visiting rarely or taking part in tournaments? Become a member
+          for one day and come back soon!
         </div>
-        <div class="text-white text-center p-2">7€</div>
+        <div className="text-white text-center p-2">7€</div>
       </div>
 
-      <div class="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
+      <div className="flex-1 max-w-sm mx-2 rounded bg-white bg-opacity-25 overflow-hidden shadow-lg">
         <img
-          class="w-full min-h-0"
+          className="w-full min-h-0"
           src="/danSFIV.jpg"
           alt="dan from street fighter 4"
         />
-        <div class="text-white font-bold text-center p-2 text-3xl">Full</div>
-        <div class="text-white py-3 text-left p-2">
+        <div className="text-white font-bold text-center p-2 text-3xl">
+          Full
+        </div>
+        <div className="text-white py-3 text-left p-2">
           {' '}
           There is no place like the Dojo? Become a full member and enjoy
           everything the Virtual Dojo Vienna has to offer.
         </div>
-        <div class="text-white text-center p-2">25€/month</div>
+        <div className="text-white text-center p-2">25€/month</div>
       </div>
     </div>
 
