@@ -52,11 +52,11 @@ const Header = () => (
 
       <NavLink href="/memberships">Memberships</NavLink>
 
-      {/* <NavLink href='/hello/'>hello</NavLink> */}
+      <NavLink href="/hello/">hello</NavLink>
 
-      {/* <NavLink href='/forgot-password/'>forgot password</NavLink> */}
+      <NavLink href="/forgot-password/">forgot password</NavLink>
 
-      {/* <NavLink href='/login/'>Login</NavLink> */}
+      <NavLink href="/login/">Login</NavLink>
 
       {/* hide 'logout' when not logged in */}
       {/* MeComponent */}
