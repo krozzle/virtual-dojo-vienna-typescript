@@ -80,7 +80,7 @@ export default {
     },
   },
   link: {
-    bottomRightLinks: {},
+    bottomRightLeft: {},
   },
   sizes: {
     container: 960,
