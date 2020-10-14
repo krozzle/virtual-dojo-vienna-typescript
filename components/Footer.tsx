@@ -1,80 +1,53 @@
-import { Box, Flex, Image, Link, Text } from 'theme-ui';
+import { Flex, Link, Text } from 'theme-ui';
 
 const Footer = () => (
-  <Box
-    sx={{
-      // position: 'absolute',
-      background: 'black',
-
-      color: 'white',
-      opacity: 0.9,
-      px: 3,
-
-      // bottom: '0',
-      py: 2,
-
-      width: '100vw',
-    }}
-    as="footer"
-  >
+  <div className="flex bg-gray-100 justify-around min-h-full">
+    <div className="flex align-middle">
+      {/* <p className="text-lg pr-4 py-1">Follow us</p> */}
+      <a href="https://www.twitch.tv/virtualdojovienna" className="px-1">
+        <img className="" src="/twitch.svg" />
+      </a>
+      <a href="https://youtube.com/virtualdojovienna" className="px-1">
+        <img className="" src="/youtube.svg" />
+      </a>
+      <a href="https://twitter.com/virtualdojo" className="px-1">
+        <img className="" src="/twitter.svg" />
+      </a>
+      <a href="https://www.instagram.com/virtualdojovienna" className="px-1">
+        <img className="" src="/instagram.svg" />
+      </a>
+      <a href="https://www.facebook.com/VirtualDojoVienna/" className="px-1">
+        <img className="" src="/facebook.svg" />
+      </a>
+    </div>
+    <Text sx={{ justifySelf: 'center' }}>
+      © {new Date().getFullYear()} Virtual Dojo Vienna
+    </Text>
     <Flex
       sx={{
-        alignContent: 'center',
-        alignItems: 'center',
         justifyContent: 'space-around',
-        // width: '50vw',
       }}
     >
-      <Flex
+      <Link
+        download="/statuten"
         sx={{
-          justifyContent: 'space-around',
-          // flexDirection: 'column',
+          mx: 1,
         }}
       >
-        <Text>Follow us</Text>
-        <a href="https://www.twitch.tv/virtualdojovienna">
-          <Image variant="socials" src="/twitch.svg" />
-        </a>
-        <a href="https://youtube.com/virtualdojovienna">
-          <Image variant="socials" src="/youtube.svg" />
-        </a>
-        <a href="https://twitter.com/virtualdojo">
-          <Image variant="socials" src="/twitter.svg" />
-        </a>
-        <a href="https://www.instagram.com/virtualdojovienna">
-          <Image variant="socials" src="/instagram.svg" />
-        </a>
-        <a href="https://www.facebook.com/VirtualDojoVienna/">
-          <Image variant="socials" src="/facebook.svg" />
-        </a>
-      </Flex>
-      <Text sx={{ justifySelf: 'center' }}>
-        © 2010 - {new Date().getFullYear()} Virtual Dojo Vienna
-      </Text>
-      <Flex
-        sx={{
-          justifyContent: 'space-around',
-        }}
-      >
-        <Link
-          href="/statuten"
-          sx={{
-            mx: 1,
-          }}
-        >
+        <a href="/statuten_2016.pdf" download>
           <Text>Vereinsstatuten</Text>
-        </Link>
-        <Link
-          href="/impressum"
-          sx={{
-            mx: 1,
-          }}
-        >
-          <Text>Impressum</Text>
-        </Link>
-      </Flex>
+        </a>
+      </Link>
+      <Link
+        href="/impressum"
+        sx={{
+          mx: 1,
+        }}
+      >
+        <Text>Impressum</Text>
+      </Link>
     </Flex>
-  </Box>
+  </div>
 );
 
 export default Footer;
