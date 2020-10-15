@@ -1,16 +1,16 @@
 import AboutUs from '../components/About';
-import HeadlineMember from '../components/HeadlineMember';
 import Hero from '../components/Hero';
 import Map from '../components/Map';
-import Memberships from '../components/Memberships';
+import Membership from '../components/Membership';
 import Page from '../components/Page';
+import PriceList from '../components/PriceList';
 
 const IndexPage = () => (
   <Page>
     <Hero />
     <AboutUs />
-    <HeadlineMember />
-    <Memberships />
+    <Membership />
+    <PriceList />
     <Map />
   </Page>
 );
