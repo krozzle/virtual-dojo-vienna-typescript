@@ -2,7 +2,7 @@ import LegalNotice from './LegalNotice';
 import ContactForm from './ContactForm';
 
 const Contact = () => (
-  <div className="w-full flex flex-col bg-black bg-opacity-50">
+  <div className="w-full flex flex-col bg-black">
     <div className="flex justify-center align-middle text-5xl text-white pt-12">
       Contact Us
     </div>
