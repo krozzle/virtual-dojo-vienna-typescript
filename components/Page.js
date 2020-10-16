@@ -4,7 +4,6 @@ import { ThemeProvider } from 'theme-ui';
 import theme from './styles/theme';
 import Link from './Link';
 import NavLink from './NavLink';
-import Contact from './Contact';
 import Footer from './Footer';
 import Header from './Header';
 // import pdf from '../../public/statuten_2016.pdf';

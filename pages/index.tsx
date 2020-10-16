@@ -1,4 +1,5 @@
 import AboutUs from '../components/About';
+import Contact from '../components/Contact';
 import Hero from '../components/Hero';
 import Map from '../components/Map';
 import Membership from '../components/Membership';
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Membership />
     <PriceList />
     <Map />
+    <Contact />
   </Page>
 );
 

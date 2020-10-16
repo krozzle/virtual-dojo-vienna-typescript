@@ -1,5 +1,3 @@
-import { Flex, NavLink } from 'theme-ui';
-
 const Header = () => (
   <div className="flex justify-around w-full bg-black bg-opacity-75 items-center top-0 fixed">
     {/* <Flex
@@ -9,7 +7,7 @@ const Header = () => (
       }}
     > */}
     <a href="/">
-      <img className="w-48" src="/vdvlogo.png" />
+      <img className="w-16 py-1" src="/vdvlogo-cropped.png" />
     </a>
     {/* <Text
             sx={{
@@ -44,12 +42,18 @@ const Header = () => (
               Vienna
             </Link>
           </Text> */}
-    <Flex as="nav">
-      <NavLink href="/">Home</NavLink>
+    <div className="flex text-white justify-around align-middle text-lg ">
+      <a className="px-4" href="/">
+        Home
+      </a>
 
-      <NavLink href="/AboutUs">About Us</NavLink>
+      <a className="px-4" href="/AboutUs">
+        About Us
+      </a>
 
-      <NavLink href="/memberships">Memberships</NavLink>
+      <a className="px-4" href="/memberships">
+        Memberships
+      </a>
 
       {/* <NavLink href="/hello/">hello</NavLink> */}
 
@@ -60,16 +64,10 @@ const Header = () => (
       {/* hide 'logout' when not logged in */}
       {/* MeComponent */}
       {/* <NavLink href='/logout/'>logout</NavLink> */}
-      {/* <Contact
-      sx={{
-        justifySelf: 'flex-end',
-      }}
-      /> */}
+
       {/* <NavLink href='/prices'>Prices</NavLink> */}
       {/* fused with Memberships!! */}
-
-      {/* <NavLink href='/contact'>Contact Us</NavLink> */}
-    </Flex>
+    </div>
     {/* </Flex> */}
   </div>
 );

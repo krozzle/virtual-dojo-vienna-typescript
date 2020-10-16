@@ -5,7 +5,7 @@ const Membership = () => (
     <div className="flex flex-row justify-center align-center">
       <div className="font-bold text-6xl">
         Become A Member
-        <div className="border-red-700 border-t w-32" />
+        <div className="border-red-700 border-t-2 w-32" />
       </div>
     </div>
     <div className="flex flex-row justify-around pt-4 pb-32 align-center">

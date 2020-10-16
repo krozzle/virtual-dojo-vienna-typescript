@@ -1,86 +1,90 @@
-/** @jsx jsx */
-// enables theme-ui in <jsx>
-import { useState } from 'react';
-import Modal from 'react-modal';
-import { jsx, Box, Input, Button, Flex, Textarea } from 'theme-ui';
+const Contact = () => (
+  <div className="w-full flex flex-col bg-black bg-opacity-50">
+    <div className="flex justify-center align-middle text-5xl text-white pt-12">
+      Contact Us
+    </div>
+    <div className="flex justify-center align-middle">
+      <div className="border-red-700 border-t-2 w-48" />
+    </div>
+    <div className="flex justify-center align-middle pt-12 text-3xl text-white font-hairline">
+      If you have questions and would like to know more, please contact us
+      through the form below.
+    </div>
 
-const Contact = () => {
-  const [modalIsOpen, SetModalIsOpen] = useState(false);
+    <div className="flex w-96 justify-around align-middle">
+      <div className="flex flex-col justify-center align-middle">
+        <div className="text-white">yo</div>
+      </div>
 
-  const customStyles = {
-    content: {
-      position: 'fixed',
-      width: '45vw',
-      maxHeight: '70vh',
-      top: '50vh',
-      left: '50vw',
-      right: 'auto',
-      bottom: 'auto',
-      zIndex: '100',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-    },
-  };
-
-  Modal.setAppElement('body');
-  return (
-    // todo put the styles in theme.js
-    <>
-      <Button
-        sx={{
-          backgroundColor: 'primary',
-          minHeight: '2em',
-          maxHeight: '2em',
-          fontSize: '2',
-          cursor: 'pointer',
-          // borderRadius: '30%',
-        }}
-        onClick={() => SetModalIsOpen(true)}
-      >
-        Contact
-      </Button>
-
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => SetModalIsOpen(false)}
-        style={customStyles}
-      >
-        <Flex
-          sx={{
-            // position: 'fixed',
-
-            opacity: 0.9,
-            justifyContent: 'space-between',
-            alignContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <h2>Contact us</h2>
-          <Button
-            onClick={() => SetModalIsOpen(false)}
-            sx={{
-              maxHeight: '2.5em',
-              maxWidth: '2.5em',
-              alignContent: 'center',
-            }}
-          >
-            &times;
-          </Button>
-        </Flex>
-        <Input placeholder="Your email address" />
-        <br />
-        <Textarea
-          variant="modal"
-          name="email-us"
-          cols="20"
-          rows="5"
-          placeholder="Talk to us..."
-          autoFocus
-        />
-        <Button sx={{ mt: '0.5em' }}>Submit</Button>
-      </Modal>
-    </>
-  );
-};
+      {/* Form begins here */}
+      <div className="p-24 justify-center align-middle flex">
+        <form className="w-full max-w-lg">
+          <div className="flex">
+            <div className="w-full">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold"
+                for="grid-password"
+              >
+                Name
+              </label>
+              {/* <p className="text-gray-600 text-xs">Name</p> */}
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                placeholder="name"
+                id="nick"
+                type="text"
+              />
+            </div>
+          </div>
+          <div className="flex">
+            <div className="w-full">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold"
+                for="grid-password"
+              >
+                E-mail
+              </label>
+              {/* <p className="text-gray-600 text-xs">E-mail</p> */}
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="email"
+                type="email"
+              />
+            </div>
+          </div>
+          <div className="flex">
+            <div className="w-full">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold"
+                for="grid-password"
+              >
+                Message
+              </label>
+              <textarea
+                className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                id="message"
+              ></textarea>
+              <p className="text-gray-600 text-xs">
+                Re-size can be disabled by set by resize-none / resize-y /
+                resize-x / resize
+              </p>
+            </div>
+          </div>
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3">
+              <button
+                className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold rounded"
+                type="button"
+              >
+                Send
+              </button>
+            </div>
+            <div className="md:w-2/3"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+);
 
 export default Contact;

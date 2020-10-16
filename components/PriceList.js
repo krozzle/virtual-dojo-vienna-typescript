@@ -8,7 +8,9 @@ const PriceList = () => (
           alt="dan from street fighter 4"
         /> */}
         <div className="px-12 font-bold text-center text-4xl">Free</div>
-        <div className="mx-12 border-t border-2 border-red-700 w-32" />
+        <div className="flex justify-center align-middle">
+          <div className="border-t-2 border-red-700 w-16" />
+        </div>
         <div className="py-12 text-lg text-center">
           {' '}
           Not sure if this is the place for you? Try out the Virtual Dojo Vienna
@@ -24,7 +26,9 @@ const PriceList = () => (
           alt="dan from street fighter 4"
         /> */}
         <div className="px-12 font-bold text-center text-4xl">Day</div>
-        <div className="mx-12 border-t border-2 border-red-700 w-32" />
+        <div className="flex justify-center align-middle">
+          <div className="border-t-2 border-red-700 w-16" />
+        </div>
         <div className="py-12 text-lg text-center">
           {' '}
           Are you visiting rarely or taking part in tournaments? Become a member
@@ -41,7 +45,9 @@ const PriceList = () => (
           alt="dan from street fighter 4"
         /> */}
         <div className="px-12 font-bold text-center text-4xl">Full</div>
-        <div className="mx-12 border-t border-2 border-red-700 w-32" />
+        <div className="flex justify-center align-middle">
+          <div className="border-t-2 border-red-700 w-16" />
+        </div>
         <div className="py-12 text-lg text-center">
           {' '}
           There is no place like the Dojo? Become a full member and enjoy
