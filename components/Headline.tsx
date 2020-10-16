@@ -15,6 +15,9 @@ const Headline = () => (
       </div>
       <div className="text-white font-extrabold p-2 text-center text-4xl pt-8 uppercase">
         Competitively
+        <div className="flex justify-center align-middle">
+          <div className="border-red-700 border-opacity-50 border-t-2 w-1/5" />
+        </div>
       </div>
     </div>
   </div>

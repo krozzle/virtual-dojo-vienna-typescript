@@ -9,12 +9,12 @@ const Contact = () => (
     <div className="flex justify-center align-middle">
       <div className="border-red-700 border-t-2 w-48" />
     </div>
-    <div className="flex justify-center align-middle pt-12 text-3xl text-white font-hairline">
+    <div className="flex justify-center align-middle pt-8 text-3xl text-white font-hairline">
       If you have questions and would like to know more, please contact us
       through the form below.
     </div>
 
-    <div className="flex p-24 justify-around align-middle">
+    <div className="flex p-20 justify-around align-middle">
       <LegalNotice />
       <ContactForm />
     </div>
