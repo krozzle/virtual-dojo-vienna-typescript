@@ -1,5 +1,5 @@
 const ContactForm = () => (
-  <div className="justify-center w-1/3 align-middle flex">
+  <div className="flex justify-center w-1/3 align-middle ">
     <form className="w-full">
       <div className="flex">
         <div className="pb-4 w-full">
@@ -53,7 +53,7 @@ const ContactForm = () => (
       <div className="flex w-full md:flex md:items-center py-4">
         <div className="flex flex-col w-full">
           <button
-            className="shadow bg-primary hover:bg-red-500 focus:shadow-outline focus:outline-none text-white font-bold rounded"
+            className="shadow-lg bg-primary hover:bg-red-700 hover:text-gray200 focus:shadow-outline focus:outline-none text-white text-xl tracking-normal font-bold rounded"
             type="button"
           >
             Send

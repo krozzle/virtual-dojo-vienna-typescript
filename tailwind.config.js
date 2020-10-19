@@ -2,13 +2,13 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
+      backgroundImage: {
         'hero-pattern': "url('/public/header.png')",
         'arcade-stick': "url('/public/arcadestick-closeup-resized.jpeg')",
-      }),
-      colors: (theme) => ({
+      },
+      colors: {
         primary: '#fc0035',
-      }),
+      },
     },
   },
   variants: {},
