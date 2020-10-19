@@ -7,7 +7,7 @@ const Contact = () => (
       Contact Us
     </div>
     <div className="flex justify-center align-middle">
-      <div className="border-red-700 border-t-2 w-48" />
+      <div className="border-primary border-t-2 w-48" />
     </div>
     <div className="flex justify-center align-middle pt-8 text-3xl text-white font-hairline">
       If you have questions and would like to know more, please contact us

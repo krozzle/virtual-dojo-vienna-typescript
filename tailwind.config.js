@@ -6,6 +6,9 @@ module.exports = {
         'hero-pattern': "url('/public/header.png')",
         'arcade-stick': "url('/public/arcadestick-closeup-resized.jpeg')",
       }),
+      colors: (theme) => ({
+        primary: '#fc0035',
+      }),
     },
   },
   variants: {},

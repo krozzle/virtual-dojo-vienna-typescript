@@ -6,7 +6,7 @@ const Headline = () => (
     </div> */}
     <div className="flex text-center justify-center text-center text-white text-6xl font-extrabold w-2/3 p-4 uppercase">
       {' '}
-      Virtual Dojo <div className="text-center text-red-700"> | </div>{' '}
+      Virtual Dojo <div className="text-center text-primary"> | </div>{' '}
       <div className="text-center font-light">Vienna</div>
     </div>
     <div className="w-full justify-center text-white font-hairline bg-opacity-0 p-4 text-center text-4xl pt-8 uppercase">
@@ -16,7 +16,7 @@ const Headline = () => (
       <div className="text-white font-bold p-2 text-center text-5xl pt-8 uppercase">
         Competitively
         <div className="flex justify-center align-middle">
-          <div className="border-red-700 border-opacity-50 border-t-2 w-1/5" />
+          <div className="border-primary border-opacity-50 border-t-2 w-1/5" />
         </div>
       </div>
     </div>

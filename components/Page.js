@@ -11,7 +11,7 @@ const Page = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Head>
       <title>Virtual Dojo Vienna</title>
-      <link rel="icon" href="/vdv-logo.jpg" />
+      <link rel="icon" href="/vdv-logo.png" />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap"
         rel="stylesheet"

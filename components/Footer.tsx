@@ -34,7 +34,7 @@ const Footer = () => (
       </a>
     </div>
     <div className="flex justify-center align-middle text-lg py-1">
-      © Virtual Dojo Vienna {new Date().getFullYear()}
+      Copyright {new Date().getFullYear()}
     </div>
     <div className="flex justify-center align-middle">
       <a href="/statuten_2016.pdf" download>

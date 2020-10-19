@@ -53,7 +53,7 @@ const ContactForm = () => (
       <div className="flex w-full md:flex md:items-center py-4">
         <div className="flex flex-col w-full">
           <button
-            className="shadow bg-red-700 hover:bg-red-500 focus:shadow-outline focus:outline-none text-white font-bold rounded"
+            className="shadow bg-primary hover:bg-red-500 focus:shadow-outline focus:outline-none text-white font-bold rounded"
             type="button"
           >
             Send
