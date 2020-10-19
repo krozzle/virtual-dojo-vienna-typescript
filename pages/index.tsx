@@ -1,6 +1,6 @@
 import AboutUs from '../components/About';
 import Contact from '../components/Contact';
-import Hero from '../components/Hero';
+import Headline from '../components/Headline';
 import Map from '../components/Map';
 import Membership from '../components/Membership';
 import Page from '../components/Page';
@@ -8,7 +8,7 @@ import PriceList from '../components/PriceList';
 
 const IndexPage = () => (
   <Page>
-    <Hero />
+    <Headline />
     <AboutUs />
     <Membership />
     <PriceList />

@@ -17,8 +17,8 @@ const Page = ({ children }) => (
         rel="stylesheet"
       />
     </Head>
-    {/* <div class="bg-hero-pattern bg-black"> */}
-    <div class="bg-black">
+    <Header />
+    <div class="bg-hero-pattern bg-black bg-fixed bg-contain bg-no-repeat">
       <div>{children}</div>
       <Footer />
     </div>

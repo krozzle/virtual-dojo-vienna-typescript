@@ -28,7 +28,7 @@ const Header = () => (
         Contact
       </a>
 
-      <a className="px-4" href="/login">
+      {/* <a className="px-4" href="/login">
         Login
       </a>
 
@@ -38,7 +38,7 @@ const Header = () => (
 
       <a className="px-4" href="/logout">
         Logout
-      </a>
+      </a> */}
     </div>
   </div>
 );

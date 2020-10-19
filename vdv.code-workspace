@@ -7,5 +7,7 @@
       "path": "../../../Code/boilerplates/type-graphql-typeorm"
     }
   ],
-  "settings": {}
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
 }
