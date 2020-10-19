@@ -1,5 +1,5 @@
 const LegalNotice = () => (
-  <div className="flex flex-col justify-center align-middle">
+  <div className="flex w-1/3 flex-col justify-center align-middle">
     <div className="text-3xl pb-1 text-white font-bold">Legal Notice</div>
     <div className="text-xl pt-1 text-white">Address</div>
     <div className="text-white pb-1 font-hairline">Praterstraße 58/1/L1</div>
@@ -19,7 +19,7 @@ const LegalNotice = () => (
       AT94 2011 1842 6118 4800
     </div>
     <div className="text-xl pt-1 text-white">BIC</div>
-    <div className="text-white pb-1 font-hairline">GIBAATWWXXX</div>
+    <div className="text-white font-hairline">GIBAATWWXXX</div>
   </div>
 );
 

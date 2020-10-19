@@ -1,5 +1,5 @@
 const Footer = () => (
-  <div className="flex justify-around bottom-0 min-h-0 bg-black text-white py-2 px-12">
+  <div className="flex justify-around bottom-0 min-h-0 bg-black bg-opacity-50 text-white py-2 px-12">
     <div className="flex align-middle py-1">
       {/* <p className="text-lg pr-4 py-1">Follow us</p> */}
       <a href="https://www.twitch.tv/virtualdojovienna">

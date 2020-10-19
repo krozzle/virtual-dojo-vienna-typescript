@@ -3,7 +3,7 @@ const Header = () => (
   // todo make whole section shrink when scrolled down after certain threshold (ie 2/3)
   // todo shrink logo by 50% after scrolling?
 
-  <div className="flex justify-around w-full bg-black bg-opacity-75 items-center top-0 fixed">
+  <div className="flex justify-around w-full bg-black bg-opacity-50 items-center top-0 fixed">
     <a href="/">
       <img className="w-16 py-1" src="/vdvlogo-cropped.png" />
     </a>

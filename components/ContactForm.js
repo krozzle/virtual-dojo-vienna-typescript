@@ -4,7 +4,7 @@ const ContactForm = () => (
       <div className="flex">
         <div className="pb-4 w-full">
           <label
-            className="block uppercase pb-1 tracking-wide text-gray-700 text-xs font-bold"
+            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
             for="grid-password"
           >
             Name
@@ -21,7 +21,7 @@ const ContactForm = () => (
       <div className="flex">
         <div className="pb-4 w-full">
           <label
-            className="block uppercase pb-1 tracking-wide text-gray-700 text-xs font-bold"
+            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
             for="grid-password"
           >
             E-mail
@@ -38,7 +38,7 @@ const ContactForm = () => (
       <div className="flex">
         <div className="w-full">
           <label
-            className="block uppercase pb-1 tracking-wide text-gray-700 text-xs font-bold"
+            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
             for="grid-password"
           >
             Message
@@ -50,14 +50,11 @@ const ContactForm = () => (
           ></textarea>
         </div>
       </div>
-      <div className="flex w-full md:flex md:items-center py-4">
-        <div className="flex flex-col w-full">
-          <button
-            className="shadow-lg bg-primary hover:bg-red-700 hover:text-gray200 focus:shadow-outline focus:outline-none text-white text-xl tracking-normal font-bold rounded"
-            type="button"
-          >
+      <div className="flex w-full justify-center md:flex md:items-center pt-4">
+        <div className="w-full">
+          <div className="shadow-lg bg-primary hover:bg-red-700 hover:text-gray-100 hover:border hover:border-8 focus:outline-none focus:shadow-outline text-white text-center text-xl tracking-normal font-bold rounded">
             Send
-          </button>
+          </div>
         </div>
       </div>
     </form>
