@@ -9,11 +9,11 @@ const Headline = () => (
       Virtual Dojo <div className="text-center text-red-700"> | </div>{' '}
       <div className="text-center font-light">Vienna</div>
     </div>
-    <div className="w-full justify-center text-white bg-opacity-0 p-4 text-center text-4xl pt-8 uppercase">
+    <div className="w-full justify-center text-white font-hairline bg-opacity-0 p-4 text-center text-4xl pt-8 uppercase">
       <div className="p-4">
         ENJOY FIGHTING GAMES THE WAY THEY ARE MEANT TO BE PLAYED
       </div>
-      <div className="text-white font-extrabold p-2 text-center text-4xl pt-8 uppercase">
+      <div className="text-white font-bold p-2 text-center text-5xl pt-8 uppercase">
         Competitively
         <div className="flex justify-center align-middle">
           <div className="border-red-700 border-opacity-50 border-t-2 w-1/5" />

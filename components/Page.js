@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { ThemeProvider } from 'theme-ui';
 import theme from './styles/theme';
 import Link from './Link';
-import NavLink from './NavLink';
 import Footer from './Footer';
 import Header from './Header';
 // import pdf from '../../public/statuten_2016.pdf';
@@ -19,7 +18,7 @@ const Page = ({ children }) => (
       />
     </Head>
     {/* <div class="bg-hero-pattern bg-black"> */}
-    <div class="bg-gray-700">
+    <div class="bg-black">
       <div>{children}</div>
       <Footer />
     </div>
