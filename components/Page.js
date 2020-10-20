@@ -1,14 +1,12 @@
 import * as React from 'react';
 import Head from 'next/head';
-import { ThemeProvider } from 'theme-ui';
 import theme from './styles/theme';
 import Link from './Link';
 import Footer from './Footer';
 import Header from './Header';
-// import pdf from '../../public/statuten_2016.pdf';
 
 const Page = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <div>
     <Head>
       <title>Virtual Dojo Vienna</title>
       <link rel="icon" href="/vdv-logo.png" />
@@ -22,7 +20,7 @@ const Page = ({ children }) => (
       <div>{children}</div>
       <Footer />
     </div>
-  </ThemeProvider>
+  </div>
 );
 
 export default Page;
