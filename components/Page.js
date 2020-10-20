@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Head from 'next/head';
-import theme from './styles/theme';
 import Link from './Link';
 import Footer from './Footer';
 import Header from './Header';
