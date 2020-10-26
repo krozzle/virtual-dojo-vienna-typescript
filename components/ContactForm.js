@@ -1,12 +1,9 @@
 const ContactForm = () => (
-  <div className="flex justify-center w-1/3 align-middle ">
+  <div id="contact" className="flex justify-center w-1/3 align-middle ">
     <form className="w-full">
       <div className="flex">
         <div className="pb-4 w-full">
-          <label
-            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
-            for="grid-password"
-          >
+          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
             Name
           </label>
           {/* <p className="text-gray-600 text-xs">Name</p> */}
@@ -20,10 +17,7 @@ const ContactForm = () => (
       </div>
       <div className="flex">
         <div className="pb-4 w-full">
-          <label
-            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
-            for="grid-password"
-          >
+          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
             E-mail
           </label>
           {/* <p className="text-gray-600 text-xs">E-mail</p> */}
@@ -37,10 +31,7 @@ const ContactForm = () => (
       </div>
       <div className="flex">
         <div className="w-full">
-          <label
-            className="block uppercase pb-1 tracking-wide text-white text-xs font-bold"
-            for="grid-password"
-          >
+          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
             Message
           </label>
           <textarea

@@ -15,7 +15,7 @@ const Page = ({ children }) => (
       />
     </Head>
     <Header />
-    <div class="bg-hero-pattern bg-black bg-fixed bg-contain bg-no-repeat">
+    <div className="bg-hero-pattern bg-black bg-fixed bg-contain bg-no-repeat">
       <div>{children}</div>
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 const PriceList = () => {
   const membershipTypes = [
     {
-      title: 'free',
+      title: 'try out',
       description:
         'Not sure if this is the place for you? Try out the Virtual Dojo Vienna on your first visit at no extra costs.',
       price: 'free',
@@ -20,10 +20,16 @@ const PriceList = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-full h-full bg-white min-h-full justify-around p-32">
+    <div
+      id="prices"
+      className="flex flex-col w-full h-full bg-white min-h-full justify-around p-32"
+    >
       <div className="flex rounded-lg px-16 gap-16 justify-around">
-        {membershipTypes.map((membership) => (
-          <div className="flex-1 flex-col justify-around align-middle border-2 border-gray-700 border-opacity-50 bg-gray-100 bg-opacity-50 py-12 px-4 rounded-lg overflow-hidden shadow-lg">
+        {membershipTypes.map((membership, i) => (
+          <div
+            className="flex-1 flex-col justify-around align-middle border-2 border-gray-700 border-opacity-50 bg-gray-100 bg-opacity-50 py-12 px-4 rounded-lg overflow-hidden shadow-lg"
+            key={i}
+          >
             {/* <img
           className="w-full min-h-0"
           src="/danSFIV.jpg"
@@ -45,4 +51,5 @@ const PriceList = () => {
     </div>
   );
 };
+
 export default PriceList;

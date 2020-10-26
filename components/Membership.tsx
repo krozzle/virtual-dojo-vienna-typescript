@@ -1,5 +1,5 @@
 const Membership = () => (
-  <div className="flex flex-col bg-gray-200 h-96 py-32 px-20">
+  <div id="membership" className="flex flex-col bg-gray-200 h-96 py-32 px-20">
     <div className="text-primary text-2xl text-center px-2">membership</div>
 
     <div className="flex flex-row justify-center align-center">

@@ -11,7 +11,7 @@ const LegalNotice = () => (
       </div>
     </a>
     <div className="text-xl pt-1 text-white">Phone</div>
-    <a href="phone: +4312767824">
+    <a href="tel: +4312767824">
       <div className="text-white pb-1 font-hairline">+43 1 27 67 824</div>
     </a>
     <div className="text-xl pt-1 text-white">IBAN</div>
