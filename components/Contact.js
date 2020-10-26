@@ -14,7 +14,7 @@ const Contact = () => (
       through the form below.
     </div>
 
-    <div className="flex pt-12 pb-16 justify-center">
+    <div className="flex pt-12 pb-8 justify-center">
       <LegalNotice />
       <ContactForm />
     </div>

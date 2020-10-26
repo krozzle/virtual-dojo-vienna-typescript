@@ -1,5 +1,5 @@
 const ContactForm = () => (
-  <div id="contact" className="flex justify-center w-1/3 align-middle ">
+  <div id="contact" className="flex justify-center w-1/3 py-8 align-middle ">
     <form className="w-full">
       <div className="flex">
         <div className="pb-4 w-full">
@@ -42,10 +42,8 @@ const ContactForm = () => (
         </div>
       </div>
       <div className="flex w-full justify-center md:flex md:items-center pt-4">
-        <div className="w-full">
-          <div className="shadow-lg bg-primary hover:bg-red-700 hover:text-gray-100 hover:border hover:border-8 focus:outline-none focus:shadow-outline text-white text-center text-xl tracking-normal font-bold rounded">
-            Send
-          </div>
+        <div className="px-8 py-1 shadow-lg bg-primary hover:bg-red-700 hover:text-gray-100 hover:border hover:border-8 focus:outline-none focus:shadow-outline text-white text-center text-xl tracking-normal font-bold rounded">
+          Send
         </div>
       </div>
     </form>

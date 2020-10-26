@@ -7,7 +7,7 @@ module.exports = {
         'arcade-stick': "url('/public/arcadestick-closeup-resized.jpeg')",
       },
       colors: {
-        primary: '#fc0035',
+        primary: '#fa0041',
       },
     },
   },

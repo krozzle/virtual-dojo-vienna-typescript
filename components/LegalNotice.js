@@ -1,3 +1,5 @@
+import Follow from './Follow';
+
 const LegalNotice = () => (
   <div className="flex w-1/3 flex-col justify-around align-middle">
     <div className="text-3xl pb-1 text-white font-bold">Legal Notice</div>
@@ -19,7 +21,12 @@ const LegalNotice = () => (
       AT94 2011 1842 6118 4800
     </div>
     <div className="text-xl pt-1 text-white">BIC</div>
-    <div className="text-white font-hairline">GIBAATWWXXX</div>
+    <div className="text-white pb-1 font-hairline">GIBAATWWXXX</div>
+    <br />
+    <div className="text-2xl px-2 py-2 text-white mr-auto hover:text-primary hover:underline">
+      <a href="http://virtualdojovienna.com/statuten_2016.pdf">Club Statutes</a>
+    </div>
+    <Follow />
   </div>
 );
 
