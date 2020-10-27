@@ -1,5 +1,5 @@
 const Footer = () => (
-  <div className="flex-col justify-around align-middle bg-primary bottom-0 min-h-0 bg-black py-2">
+  <div className="flex-col justify-around align-middle bg-primary text-gray-900 bottom-0 min-h-0 py-2">
     <div className="flex justify-center align-middle text-lg py-1">
       Virtual Dojo Vienna Ⓒ {new Date().getFullYear()}
     </div>

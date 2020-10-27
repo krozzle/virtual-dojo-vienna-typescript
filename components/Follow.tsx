@@ -1,8 +1,8 @@
 const Follow = () => (
-  <div className="flex align-middle py-1">
+  <div className="md:flex align-middle py-1 hidden">
     {/* <p className="text-lg pr-4 py-1">Follow us</p> */}
     <a href="https://www.twitch.tv/virtualdojovienna">
-      <img className="px-2" src="/twitch.svg" />
+      <img className="pr-2" src="/twitch.svg" />
     </a>
     <a href="https://youtube.com/virtualdojovienna">
       <img className="px-2" src="/youtube.svg" />
@@ -14,7 +14,7 @@ const Follow = () => (
       <img className="px-2" src="/instagram.svg" />
     </a>
     <a href="https://www.facebook.com/VirtualDojoVienna/">
-      <img className="px-2" src="/facebook.svg" />
+      <img className="pl-2" src="/facebook.svg" />
     </a>
   </div>
 );

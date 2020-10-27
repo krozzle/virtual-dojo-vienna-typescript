@@ -1,7 +1,7 @@
 const PriceList = () => {
   const membershipTypes = [
     {
-      title: 'try out',
+      title: 'try-out',
       description:
         'Not sure if this is the place for you? Try out the Virtual Dojo Vienna on your first visit at no extra costs.',
       price: 'free',
@@ -35,7 +35,7 @@ const PriceList = () => {
           src="/danSFIV.jpg"
           alt="dan from street fighter 4"
         /> */}
-            <div className="px-12 font-bold text-center text-4xl uppercase">
+            <div className="px-12 font-bold text-center text-gray-900 text-4xl uppercase">
               {membership.title}
             </div>
             <div className="flex justify-center align-middle">
@@ -44,7 +44,9 @@ const PriceList = () => {
             <div className="py-12 text-lg text-center text-gray-800">
               {membership.description}
             </div>
-            <div className="text-lg text-center">{membership.price}</div>
+            <div className="text-lg text-center text-gray-800">
+              {membership.price}
+            </div>
           </div>
         ))}
       </div>

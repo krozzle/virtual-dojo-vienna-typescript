@@ -1,9 +1,12 @@
 const ContactForm = () => (
-  <div id="contact" className="flex justify-center w-1/3 py-8 align-middle ">
+  <div
+    id="contact"
+    className="flex flex-col justify-center align-middle px-8 md:flex-row md:w-1/3 py-8"
+  >
     <form className="w-full">
       <div className="flex">
         <div className="pb-4 w-full">
-          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
+          <label className="block uppercase pb-1 tracking-wide text-gray-100 text-xs font-bold">
             Name
           </label>
           {/* <p className="text-gray-600 text-xs">Name</p> */}
@@ -17,7 +20,7 @@ const ContactForm = () => (
       </div>
       <div className="flex">
         <div className="pb-4 w-full">
-          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
+          <label className="block uppercase pb-1 tracking-wide text-gray-100 text-xs font-bold">
             E-mail
           </label>
           {/* <p className="text-gray-600 text-xs">E-mail</p> */}
@@ -31,7 +34,7 @@ const ContactForm = () => (
       </div>
       <div className="flex">
         <div className="w-full">
-          <label className="block uppercase pb-1 tracking-wide text-white text-xs font-bold">
+          <label className="block uppercase pb-1 tracking-wide text-gray-100 text-xs font-bold">
             Message
           </label>
           <textarea
@@ -42,7 +45,7 @@ const ContactForm = () => (
         </div>
       </div>
       <div className="flex w-full justify-center md:flex md:items-center pt-4">
-        <div className="px-8 py-1 shadow-lg bg-primary hover:bg-red-700 hover:text-gray-100 hover:border hover:border-8 focus:outline-none focus:shadow-outline text-white text-center text-xl tracking-normal font-bold rounded">
+        <div className="px-8 py-2 shadow-lg bg-primary text-gray-100 text-center text-lg tracking-wide font-semibold rounded hover:bg-red-700 hover:text-gray-100 hover:border hover:border-8 focus:outline-none focus:shadow-outline">
           Send
         </div>
       </div>

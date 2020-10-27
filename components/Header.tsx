@@ -7,7 +7,7 @@ const Header = () => (
     <a href="/">
       <img className="w-16 py-1" src="/vdvlogo-cropped.png" />
     </a>
-    <div className="flex text-white justify-around align-middle text-lg ">
+    <div className="flex text-gray-100 justify-around align-middle text-lg ">
       <a className="px-4" href="/">
         Home
       </a>

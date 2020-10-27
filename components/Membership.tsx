@@ -3,7 +3,7 @@ const Membership = () => (
     <div className="text-primary text-2xl text-center px-2">membership</div>
 
     <div className="flex flex-row justify-center align-center">
-      <div className="font-bold text-6xl">
+      <div className="font-bold text-gray-900 text-6xl">
         Become A Member
         <div className="border-primary border-t-2 w-32" />
       </div>
