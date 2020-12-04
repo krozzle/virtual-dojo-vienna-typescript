@@ -10,9 +10,9 @@ const ChangePassword = ({ token }: { token: string }) => {
   return (
     <Page>
       <ChangePasswordMutationComponent>
-        {changePassword => (
+        {(changePassword) => (
           <Formik
-            onSubmit={async data => {
+            onSubmit={async (data) => {
               const response = await changePassword({
                 variables: {
                   data: {
@@ -31,12 +31,12 @@ const ChangePassword = ({ token }: { token: string }) => {
             {({ handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Field
-                  name='password'
-                  placeholder='password'
+                  name="password"
+                  placeholder="password"
                   component={InputField}
-                  type='password'
+                  type="password"
                 />
-                <button type='submit'>change password</button>
+                <button type="submit">change password</button>
               </form>
             )}
           </Formik>

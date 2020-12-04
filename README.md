@@ -1,9 +1,10 @@
+## Integrate Tailwind CSS
+
 ## Virtual Dojo Vienna webpage
 
 Technologies used:
 
 ```
-Javascript
 React
 Node.js
 Next.js
@@ -13,5 +14,5 @@ TypeGraphQL
 TypeORM
 Apollo
 Express
-Theme-UI
+TailwindCSS
 ```

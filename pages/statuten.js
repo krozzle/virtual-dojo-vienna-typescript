@@ -11,7 +11,7 @@ function Statuten() {
   }
 
   function changePage(offset) {
-    setPageNumber(prevPageNumber => prevPageNumber + offset);
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
   }
 
   function previousPage() {
@@ -24,7 +24,7 @@ function Statuten() {
 
   return (
     <div>
-      <Document file='statuten_2016.pdf' onLoadSuccess={onDocumentLoadSuccess}>
+      <Document file="/statuten_2016.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
         <button onClick={previousPage}>&larr;</button>
         <button onClick={nextPage}>&rarr;</button>

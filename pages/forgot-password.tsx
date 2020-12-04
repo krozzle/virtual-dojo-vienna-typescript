@@ -9,11 +9,11 @@ export default () => {
   return (
     <Page>
       <ForgotPasswordMutationComponent>
-        {forgotPassword => (
+        {(forgotPassword) => (
           <Formik
             validateOnBlur={false}
             validateOnChange={false}
-            onSubmit={async data => {
+            onSubmit={async (data) => {
               const response = await forgotPassword({
                 variables: data,
               });
@@ -34,12 +34,12 @@ export default () => {
             {({ handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Field
-                  name='email'
-                  placeholder='email'
+                  name="email"
+                  placeholder="email"
                   component={InputField}
                 />
 
-                <button type='submit'>forgot password</button>
+                <button type="submit">forgot password</button>
               </form>
             )}
           </Formik>

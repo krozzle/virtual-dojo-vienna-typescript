@@ -1,86 +1,25 @@
-/** @jsx jsx */
-// enables theme-ui in <jsx>
-import { useState } from 'react';
-import Modal from 'react-modal';
-import { jsx, Box, Input, Button, Flex, Textarea } from 'theme-ui';
+import LegalNotice from './LegalNotice';
+import ContactForm from './ContactForm';
+import Follow from './Follow';
 
-const Contact = () => {
-  const [modalIsOpen, SetModalIsOpen] = useState(false);
+const Contact = () => (
+  <div className="w-full flex flex-col px-8 justify-center align-middle bg-opacity-100">
+    <div className="flex justify-center align-middle text-5xl text-gray-100 pt-12">
+      Contact Us
+    </div>
+    <div className="flex justify-center align-middle">
+      <div className="border-primary border-t-2 w-48" />
+    </div>
+    <div className="flex justify-center align-middle pt-8 text-3xl text-gray-100 font-hairline">
+      If you have questions and would like to know more, please contact us
+      through the form below.
+    </div>
 
-  const customStyles = {
-    content: {
-      position: 'fixed',
-      width: '45vw',
-      maxHeight: '70vh',
-      top: '50vh',
-      left: '50vw',
-      right: 'auto',
-      bottom: 'auto',
-      zIndex: '100',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-    },
-  };
-
-  Modal.setAppElement('body');
-  return (
-    // todo put the styles in theme.js
-    <>
-      <Button
-        sx={{
-          backgroundColor: 'primary',
-          minHeight: '2em',
-          maxHeight: '2em',
-          fontSize: '2',
-          cursor: 'pointer',
-          // borderRadius: '30%',
-        }}
-        onClick={() => SetModalIsOpen(true)}
-      >
-        Contact
-      </Button>
-
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => SetModalIsOpen(false)}
-        style={customStyles}
-      >
-        <Flex
-          sx={{
-            // position: 'fixed',
-
-            opacity: 0.9,
-            justifyContent: 'space-between',
-            alignContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <h2>Contact us</h2>
-          <Button
-            onClick={() => SetModalIsOpen(false)}
-            sx={{
-              maxHeight: '2.5em',
-              maxWidth: '2.5em',
-              alignContent: 'center',
-            }}
-          >
-            &times;
-          </Button>
-        </Flex>
-        <Input placeholder='Your email address' />
-        <br />
-        <Textarea
-          variant='modal'
-          name='email-us'
-          cols='20'
-          rows='5'
-          placeholder='Talk to us...'
-          autoFocus
-        />
-        <Button sx={{ mt: '0.5em' }}>Submit</Button>
-      </Modal>
-    </>
-  );
-};
+    <div className="flex flex-col md:flex-row pt-12 pb-8 justify-center">
+      <LegalNotice />
+      <ContactForm />
+    </div>
+  </div>
+);
 
 export default Contact;

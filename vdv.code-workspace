@@ -1,11 +1,13 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "../../../Code/boilerplates/type-graphql-typeorm"
-	}
-],
-  "settings": {}
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../Code/boilerplates/type-graphql-typeorm"
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
 }

@@ -19,7 +19,7 @@ export default () => {
         }}
       >
         <LoginComponent>
-          {login => (
+          {(login) => (
             <Formik
               validateOnBlur={false}
               validateOnChange={false}
@@ -67,17 +67,17 @@ export default () => {
               {({ handleSubmit }) => (
                 <form onSubmit={handleSubmit}>
                   <Field
-                    name='email'
-                    placeholder='email'
+                    name="email"
+                    placeholder="email"
                     component={InputField}
                   />
                   <Field
-                    name='password'
-                    placeholder='password'
-                    type='password'
+                    name="password"
+                    placeholder="password"
+                    type="password"
                     component={InputField}
                   />
-                  <button type='submit'>submit</button>
+                  <button type="submit">submit</button>
                 </form>
               )}
             </Formik>
